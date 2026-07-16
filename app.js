@@ -130,13 +130,16 @@
 
     document.querySelectorAll('.form-msg').forEach(m => m.classList.remove('show'));
     const attending = payload.attending;
-    if (attending === 'yes') document.getElementById('msgYes').classList.add('show');
-    else if (attending === 'no') document.getElementById('msgNo').classList.add('show');
-    else document.getElementById('msgMaybe').classList.add('show');
+    let shownMsg;
+    if (attending === 'yes') shownMsg = document.getElementById('msgYes');
+    else if (attending === 'no') shownMsg = document.getElementById('msgNo');
+    else shownMsg = document.getElementById('msgMaybe');
+    shownMsg.classList.add('show');
 
     form.reset();
     document.getElementById('allergyBox').classList.remove('show');
     document.getElementById('speechBox').classList.remove('show');
+    shownMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 
   /* ---------------- init ---------------- */
