@@ -117,7 +117,8 @@
       try {
         await fetch(RSVP_ENDPOINT, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
           body: JSON.stringify(payload)
         });
       } catch (err) {
