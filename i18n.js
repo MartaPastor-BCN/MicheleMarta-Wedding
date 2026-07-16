@@ -10,7 +10,7 @@ it: {
     p1:"Con gioia vi invitiamo al nostro matrimonio ad Acireale: un giorno tra il mare, l'Etna e le persone che amiamo. Qui trovate tutte le informazioni e potete confermare la vostra presenza."},
   rsvp: {eyebrow:"RSVP", title:"Conferma la tua presenza",
     intro:"Vi chiediamo gentilmente di compilare il modulo qui sotto per aiutarci a organizzare al meglio il nostro matrimonio.",
-    deadlineLabel:"Vi chiediamo gentilmente di confermare entro il"},
+    deadlineLabel:"Vi chiediamo gentilmente di confermare entro il", deadlineDate:"31 Luglio 2026"},
   f: {name:"Nome e cognome *", email:"Email *", phone:"Numero di telefono *",
     attending:"Sarai presente al matrimonio? *", att1:"Sì, sarò presente", att2:"No, purtroppo non potrò partecipare", att3:"Non lo so ancora",
     count:"Quante persone sono incluse in questa risposta? *", other:"Altro",
@@ -55,7 +55,7 @@ it: {
   gal: {eyebrow:"Immagini & ispirazione", title:"Ispirazione",
     ph1:"Casa delle Terre Forti", ph4:"Cena a lume di candela"},
   contact: {eyebrow:"Restiamo in contatto", title:"Contatti", text:"Per qualsiasi dubbio o informazione, potete contattarci qui:"},
-  footer: {priv:"I dati inviati tramite il modulo RSVP saranno utilizzati esclusivamente per l'organizzazione del matrimonio."}
+  footer: {priv:"I dati inviati tramite il modulo RSVP saranno utilizzati esclusivamente per l'organizzazione del matrimonio.", dateline:"19 Settembre 2026 — Acireale, Sicilia"}
 },
 en: {
   nav: {home:"Home", rsvp:"RSVP", programma:"Schedule", storia:"Our Story",
@@ -67,7 +67,7 @@ en: {
     p1:"With joy, we invite you to our wedding in Acireale — a day by the sea, beneath Etna, with the people we love. Here you'll find everything you need and can confirm your attendance."},
   rsvp: {eyebrow:"RSVP", title:"Confirm your attendance",
     intro:"Please kindly fill in the form below to help us organise our wedding in the best possible way.",
-    deadlineLabel:"Please kindly confirm by"},
+    deadlineLabel:"Please kindly confirm by", deadlineDate:"31 July 2026"},
   f: {name:"Full name *", email:"Email *", phone:"Phone number *",
     attending:"Will you attend the wedding? *", att1:"Yes, I will attend", att2:"No, I unfortunately cannot attend", att3:"I don't know yet",
     count:"How many people are included in this reply? *", other:"Other",
@@ -112,7 +112,7 @@ en: {
   gal: {eyebrow:"Images & inspiration", title:"Inspiration",
     ph1:"Casa delle Terre Forti", ph4:"Candlelit dinner"},
   contact: {eyebrow:"Stay in touch", title:"Contact", text:"For any question or information, you can reach us here:"},
-  footer: {priv:"Data submitted through the RSVP form will be used exclusively for organising the wedding."}
+  footer: {priv:"Data submitted through the RSVP form will be used exclusively for organising the wedding.", dateline:"19 September 2026 — Acireale, Sicily"}
 },
 es: {
   nav: {home:"Inicio", rsvp:"Confirmar asistencia", programma:"Programa", storia:"Nuestra historia",
@@ -124,7 +124,7 @@ es: {
     p1:"Con alegría os invitamos a nuestra boda en Acireale: un día entre el mar, el Etna y las personas que queremos. Aquí encontraréis toda la información y podréis confirmar vuestra asistencia."},
   rsvp: {eyebrow:"Confirmación", title:"Confirma tu asistencia",
     intro:"Os pedimos amablemente que rellenéis el formulario a continuación para ayudarnos a organizar mejor nuestra boda.",
-    deadlineLabel:"Os pedimos amablemente confirmar antes del"},
+    deadlineLabel:"Os pedimos amablemente confirmar antes del", deadlineDate:"31 de julio de 2026"},
   f: {name:"Nombre y apellidos *", email:"Correo electrónico *", phone:"Número de teléfono *",
     attending:"¿Asistirás a la boda? *", att1:"Sí, asistiré", att2:"No, lamentablemente no podré asistir", att3:"Todavía no lo sé",
     count:"¿Cuántas personas incluye esta respuesta? *", other:"Otro",
@@ -169,7 +169,7 @@ es: {
   gal: {eyebrow:"Imágenes e inspiración", title:"Inspiración",
     ph1:"Casa delle Terre Forti", ph4:"Cena a la luz de las velas"},
   contact: {eyebrow:"Mantente en contacto", title:"Contacto", text:"Para cualquier duda o información, podéis contactarnos aquí:"},
-  footer: {priv:"Los datos enviados a través del formulario de confirmación se usarán exclusivamente para la organización de la boda."}
+  footer: {priv:"Los datos enviados a través del formulario de confirmación se usarán exclusivamente para la organización de la boda.", dateline:"19 de septiembre de 2026 — Acireale, Sicilia"}
 },
 ca: {
   nav: {home:"Inici", rsvp:"Confirma l'assistència", programma:"Programa", storia:"La nostra història",
@@ -181,7 +181,7 @@ ca: {
     p1:"Amb alegria us convidem al nostre casament a Acireale: un dia entre el mar, l'Etna i les persones que estimem. Aquí trobareu tota la informació i podreu confirmar la vostra assistència."},
   rsvp: {eyebrow:"Confirmació", title:"Confirma la teva assistència",
     intro:"Us demanem amablement que ompliu el formulari a continuació per ajudar-nos a organitzar millor el nostre casament.",
-    deadlineLabel:"Us demanem amablement confirmar abans del"},
+    deadlineLabel:"Us demanem amablement confirmar abans del", deadlineDate:"31 de juliol de 2026"},
   f: {name:"Nom i cognoms *", email:"Correu electrònic *", phone:"Número de telèfon *",
     attending:"Assistiràs al casament? *", att1:"Sí, hi assistiré", att2:"No, malauradament no hi podré assistir", att3:"Encara no ho sé",
     count:"Quantes persones inclou aquesta resposta? *", other:"Altre",
@@ -226,7 +226,7 @@ ca: {
   gal: {eyebrow:"Imatges i inspiració", title:"Inspiració",
     ph1:"Casa delle Terre Forti", ph4:"Sopar a la llum de les espelmes"},
   contact: {eyebrow:"Mantinguem el contacte", title:"Contacte", text:"Per a qualsevol dubte o informació, podeu contactar-nos aquí:"},
-  footer: {priv:"Les dades enviades a través del formulari es faran servir exclusivament per a l'organització del casament."}
+  footer: {priv:"Les dades enviades a través del formulari es faran servir exclusivament per a l'organització del casament.", dateline:"19 de setembre de 2026 — Acireale, Sicília"}
 }
 };
 window.I18N = I18N;
