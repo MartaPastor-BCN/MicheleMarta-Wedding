@@ -106,6 +106,10 @@
     }
     payload.submittedAt = new Date().toISOString();
     payload.language = currentLang;
+    // Flatten any multi-value fields (e.g. dietary checkboxes) into one string
+    Object.keys(payload).forEach(k => {
+      if (Array.isArray(payload[k])) payload[k] = payload[k].join(', ');
+    });
 
     // Send to Power Automate flow (writes a row into RSVP_Responses table in
     // Michele_Marta_Wedding_RSVP_2026.xlsx on OneDrive, and emails both couple addresses).
