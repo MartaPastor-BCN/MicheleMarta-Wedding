@@ -1,7 +1,7 @@
 // Michele & Marta wedding website — interactivity, i18n switching, RSVP handling
 (function () {
   const WEDDING_DATE = new Date('2026-09-19T15:30:00+02:00');
-  const RSVP_ENDPOINT = ''; // TODO: paste your Power Automate HTTP trigger URL here to enable live Excel logging
+  const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycby5vzvdyVkXrvuUo968-T85cUaJgdqDczl1mRl4iyCVr3Eb23AkS_XXpPt-liXC7FmZ5g/exec';
 
   /* ---------------- i18n ---------------- */
   let currentLang = 'it';
