@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michele &amp; Marta | 19 Settembre 2026 | Acireale</title>
+<meta name="description" content="Sito ufficiale del matrimonio di Michele e Marta ad Acireale, Sicilia, il 19 settembre 2026. Conferma la tua presenza e scopri tutti i dettagli dell'evento.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#221f1c;
+    --paper:#faf7f2;
+    --paper2:#f2ede4;
+    --line:#d9d0c1;
+    --accent:#a85a34;
+    --muted:#7a716a;
+    --shadow:0 18px 44px rgba(34,31,28,.08);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'EB Garamond', serif;
+    font-size:19px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    font-weight:400;
+  }
+  h1,h2,h3{font-family:'EB Garamond', serif; font-weight:400; margin:0 0 .3em; letter-spacing:.01em;}
+  .display{font-style:italic; font-weight:400;}
+  a{color:var(--ink);}
+  img{max-width:100%; display:block;}
+  .container{max-width:1080px; margin:0 auto; padding:0 28px;}
+  section{padding:110px 0;}
+  .center{text-align:center;}
+  .eyebrow{
+    letter-spacing:.32em; text-transform:uppercase; font-size:.72rem;
+    color:var(--accent); font-weight:500; margin-bottom:18px;
+  }
+  .rule{width:44px; height:1px; margin:22px auto; background:var(--ink); opacity:.35;}
+  .rule.left{margin-left:0;}
+  h2.section-title{font-size:2.4rem; font-weight:400;}
+  p.lede{font-size:1.15rem; color:#3a352f;}
+
+  .btn{
+    display:inline-block; padding:0 0 4px; text-decoration:none;
+    font-family:'EB Garamond',serif; letter-spacing:.16em; text-transform:uppercase;
+    font-size:.8rem; font-weight:500; cursor:pointer; border:none; background:none;
+    color:var(--ink); border-bottom:1px solid var(--ink); transition:opacity .25s ease, color .25s ease, border-color .25s ease;
+  }
+  .btn:hover{color:var(--accent); border-color:var(--accent);}
+  .btn-solid{
+    border:1px solid var(--ink); padding:13px 30px; border-radius:2px;
+  }
+  .btn-solid:hover{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    background:rgba(250,247,242,.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .navbar{display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1200px; margin:0 auto;}
+  .brand{font-style:italic; font-size:1rem; letter-spacing:.14em;}
+  nav.links{display:flex; gap:24px; align-items:center; flex-wrap:wrap;}
+  nav.links a{
+    color:var(--ink); text-decoration:none; font-size:.78rem; letter-spacing:.14em;
+    text-transform:uppercase; font-weight:500; padding:4px 0; border-bottom:1px solid transparent;
+  }
+  nav.links a:hover{border-color:var(--accent); color:var(--accent);}
+  .nav-rsvp{border-bottom:1px solid var(--ink) !important;}
+  .lang-switch{display:flex; gap:10px; margin-left:6px;}
+  .lang-switch button, .lang-switch a{
+    background:none; border:none; color:var(--muted); font-size:.72rem; letter-spacing:.05em;
+    cursor:pointer; font-family:'EB Garamond',serif; padding:2px 0; text-decoration:none;
+  }
+  .lang-switch button.active, .lang-switch a.active{color:var(--ink); border-bottom:1px solid var(--accent);}
+  .burger{display:none; font-size:1.5rem; background:none; border:none; color:var(--ink); cursor:pointer;}
+
+  @media(max-width:900px){
+    nav.links{
+      display:none; position:absolute; top:60px; left:0; right:0; background:var(--paper);
+      flex-direction:column; align-items:flex-start; padding:22px 28px; box-shadow:var(--shadow); border-bottom:1px solid var(--line);
+    }
+    nav.links.open{display:flex;}
+    .burger{display:block;}
+  }
+
+  .floating-rsvp{
+    position:fixed; bottom:18px; left:50%; transform:translateX(-50%); z-index:1001;
+    background:var(--ink); color:var(--paper); padding:13px 30px;
+    letter-spacing:.14em; text-transform:uppercase; font-size:.76rem; text-decoration:none; display:none;
+  }
+  @media(max-width:760px){ .floating-rsvp{display:block;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100vh; display:flex; align-items:flex-end; justify-content:center;
+    position:relative; padding:0 20px 90px;
+    background:linear-gradient(180deg, rgba(20,17,14,.22) 0%, rgba(20,17,14,.20) 45%, rgba(20,17,14,.68) 100%), url('../assets/home-villa.jpeg') center 46%/cover no-repeat;
+  }
+  .hero-inner{max-width:640px; width:100%; text-align:center; color:#fdfbf7;}
+  .hero .eyebrow{color:#f1e3d3; opacity:.9;}
+  .hero h1.names{font-size:4.4rem; font-style:italic; font-weight:400; margin-bottom:8px; letter-spacing:.01em;}
+  .hero .date{font-size:1.05rem; letter-spacing:.28em; text-transform:uppercase; margin-bottom:6px;}
+  .hero .place{font-size:1rem; letter-spacing:.2em; text-transform:uppercase; opacity:.85; margin-bottom:26px;}
+  .hero .subtitle{font-size:1.08rem; font-style:italic; max-width:460px; margin:0 auto 30px; opacity:.92;}
+  .hero .cta-row{display:flex; gap:26px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;}
+  .hero .btn{color:#fdfbf7; border-color:#fdfbf7;}
+  .hero .btn:hover{color:#f1e3d3; border-color:#f1e3d3;}
+  .hero .btn-solid{border-color:#fdfbf7;}
+  .hero .btn-solid:hover{background:#fdfbf7; color:var(--ink);}
+  .countdown{font-size:.85rem; letter-spacing:.14em; text-transform:uppercase; opacity:.85;}
+  .countdown b{font-size:1.2rem; font-style:italic; letter-spacing:0; text-transform:none;}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0; transform:translateY(20px); transition:opacity .9s ease, transform .9s ease;}
+  .reveal.visible{opacity:1; transform:none;}
+
+  /* ---------- INTRO ---------- */
+  .intro .container{max-width:660px;}
+
+  /* ---------- RSVP ---------- */
+  .rsvp-section{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .rsvp-card{max-width:680px; margin:0 auto;}
+  .rsvp-deadline{
+    font-size:.85rem; letter-spacing:.06em; color:var(--accent); margin-bottom:36px; font-style:italic;
+  }
+  .form-group{margin-bottom:26px;}
+  .form-group label{display:block; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; margin-bottom:8px; color:var(--muted);}
+  .form-group .hint{font-size:.86rem; color:var(--muted); font-style:italic; margin-top:6px;}
+  input[type=text], input[type=email], input[type=tel], input[type=date], input[type=time], input[type=number], select, textarea{
+    width:100%; padding:10px 2px; border:none; border-bottom:1px solid var(--line); border-radius:0;
+    font-family:'EB Garamond',serif; font-size:1.05rem; background:transparent; color:var(--ink);
+  }
+  textarea{min-height:80px; resize:vertical;}
+  input:focus, select:focus, textarea:focus{outline:none; border-color:var(--accent);}
+  .radio-row, .checkbox-row{display:flex; flex-wrap:wrap; gap:22px;}
+  .radio-opt, .checkbox-opt{
+    display:flex; align-items:center; gap:8px; cursor:pointer; font-size:.98rem;
+  }
+  .radio-opt input, .checkbox-opt input{margin:0; width:auto; accent-color:var(--accent);}
+  .conditional{display:none; margin-top:14px;}
+  .conditional.show{display:block;}
+  .consent{display:flex; gap:12px; align-items:flex-start; font-size:.9rem; color:var(--muted);}
+  .consent input{width:auto; margin-top:5px; accent-color:var(--accent);}
+  .form-msg{margin-top:26px; padding:18px 0; border-top:1px solid var(--line); font-style:italic; display:none;}
+  .form-msg.show{display:block;}
+
+  /* ---------- PROGRAMMA (incl. location) ---------- */
+  .programma{background:var(--paper);}
+  .timeline-list{max-width:640px; margin:56px auto 0;}
+  .tl-row{
+    display:grid; grid-template-columns:110px 1fr; gap:24px; padding:24px 0; border-top:1px solid var(--line);
+    align-items:baseline;
+  }
+  .tl-row:last-child{border-bottom:1px solid var(--line);}
+  .tl-time{font-size:1.15rem; font-style:italic; color:var(--accent);}
+  .tl-title{font-size:1.15rem; margin-bottom:2px;}
+  .tl-loc{font-size:.92rem; color:var(--muted);}
+  .tl-note{text-align:center; margin-top:26px; font-style:italic; color:var(--muted); font-size:.92rem;}
+
+  .venue-split{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-top:100px;}
+  @media(max-width:800px){ .venue-split{grid-template-columns:1fr; gap:34px;} }
+  .venue-split img{border-radius:1px;}
+  .venue-copy .eyebrow{margin-bottom:14px;}
+  .detail-list{list-style:none; padding:0; margin:22px 0 26px;}
+  .detail-list li{padding:9px 0; border-top:1px solid var(--line); font-size:.98rem;}
+  .detail-list li:last-child{border-bottom:1px solid var(--line);}
+  .detail-list b{font-weight:500; color:var(--muted); font-size:.82rem; letter-spacing:.04em; text-transform:uppercase; display:inline-block; min-width:120px;}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .photo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:56px;}
+  @media(max-width:700px){ .photo-grid{grid-template-columns:repeat(2,1fr);} }
+  .photo-card{
+    aspect-ratio:3/4; background:#efe8db; display:flex; align-items:center;
+    justify-content:center; text-align:center; padding:16px; color:var(--muted); font-style:italic;
+    font-size:.92rem; border:1px solid var(--line);
+  }
+  .photo-card.real{background:#efe8db none; padding:0;}
+  .photo-card.real img{width:100%; height:100%; object-fit:cover;}
+  .spot{position:relative; overflow:hidden; aspect-ratio:3/4; border:1px solid var(--line);}
+  .spot img{width:100%; height:100%; object-fit:cover; transition:transform .7s ease;}
+  .spot:hover img{transform:scale(1.05);}
+  .spot figcaption{
+    position:absolute; left:0; right:0; bottom:0; padding:22px 14px 12px;
+    font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:#fdfbf7;
+    background:linear-gradient(transparent, rgba(20,17,14,.65));
+  }
+
+  /* ---------- HONEYMOON ---------- */
+  .honeymoon{background:var(--paper);}
+  .honeymoon-card{
+    max-width:520px; margin:56px auto 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:44px 0; text-align:center;
+  }
+  .iban-box{padding:20px 0 0; margin:16px 0 0; display:none; font-size:1rem;}
+  .iban-box.show{display:block;}
+  .iban-box div{padding:6px 0;}
+  .copy-note{font-size:.82rem; color:var(--accent); margin-top:10px; display:none; font-style:italic;}
+  .copy-note.show{display:block;}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .gallery-grid{columns:3 260px; column-gap:6px; margin-top:56px;}
+  .gallery-grid img{margin-bottom:6px;}
+  .gallery-ph{
+    margin-bottom:6px; background:#efe8db; aspect-ratio:4/5; display:flex;
+    align-items:center; justify-content:center; text-align:center; padding:16px; color:var(--muted);
+    font-style:italic; font-size:.9rem; break-inside:avoid; border:1px solid var(--line);
+  }
+  @media(max-width:700px){ .gallery-grid{columns:2 180px;} }
+
+  /* ---------- CONTACTS ---------- */
+  .contacts{background:var(--paper); text-align:center;}
+  .contact-links{display:flex; gap:34px; justify-content:center; flex-wrap:wrap; margin-top:28px; font-size:1.02rem;}
+  .contact-links a{border-bottom:1px solid transparent;}
+  .contact-links a:hover{border-color:var(--ink);}
+
+  footer{background:var(--ink); color:#eae4d8; padding:56px 20px 100px; text-align:center;}
+  footer .brand{font-style:italic; font-size:1.7rem; color:#f2e6d3;}
+  footer a{color:#eae4d8;}
+  footer .priv{font-size:.82rem; opacity:.6; margin-top:22px; max-width:480px; margin-left:auto; margin-right:auto;}
+  @media(max-width:760px){ footer{padding-bottom:120px;} }
+
+  ::selection{background:var(--accent); color:#fff;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="brand">M&amp;M</div>
+    <button class="burger" id="burgerBtn">&#9776;</button>
+    <nav class="links" id="navLinks">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#rsvp" data-i18n="nav.rsvp">Conferma presenza</a>
+      <a href="#programma" data-i18n="nav.programma">Programma</a>
+      <a href="#storia" data-i18n="nav.storia">La nostra storia</a>
+      <a href="#nozze" data-i18n="nav.nozze">Viaggio di nozze</a>
+      <a href="#contatti" data-i18n="nav.contatti">Contatti</a>
+      <div class="lang-switch">
+        <a href="../it/" class="">IT</a>
+        <a href="../en/" class="">EN</a>
+        <a href="../es/" class="active">ES</a>
+        <a href="../ca/" class="">CA</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<a href="#rsvp" class="floating-rsvp" data-i18n="nav.rsvpBtn">Conferma presenza</a>
+
+<!-- HOME / HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner reveal">
+    <div class="eyebrow" data-i18n="hero.eyebrow">19 Settembre 2026 — Acireale, Sicilia</div>
+    <h1 class="names display">Michele &amp; Marta</h1>
+    <div class="date">19 · 09 · 2026</div>
+    <div class="place" data-i18n="hero.place">Acireale, Sicilia</div>
+    <p class="subtitle" data-i18n="hero.subtitle">Con immensa gioia vi invitiamo a celebrare con noi il nostro matrimonio nel cuore della Sicilia.</p>
+    <div class="cta-row">
+      <a href="#rsvp" class="btn btn-solid" data-i18n="hero.cta1">Conferma la tua presenza</a>
+      <a href="#programma" class="btn" data-i18n="hero.cta2">Scopri il programma</a>
+    </div>
+    <div class="countdown"><span data-i18n="hero.countdownPre">Mancano</span> <b id="countdownDays">--</b> <span data-i18n="hero.countdownPost">giorni</span></div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="container center reveal">
+    <div class="eyebrow" data-i18n="intro.eyebrow">Benvenuti</div>
+    <p class="lede" data-i18n="intro.p1">Con gioia vi invitiamo al nostro matrimonio ad Acireale: un giorno tra il mare, l'Etna e le persone che amiamo. Qui trovate tutte le informazioni e potete confermare la vostra presenza.</p>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp-section" id="rsvp">
+  <div class="container">
+    <div class="center reveal">
+      <div class="eyebrow" data-i18n="rsvp.eyebrow">RSVP</div>
+      <h2 class="section-title" data-i18n="rsvp.title">Conferma la tua presenza</h2>
+      <p class="lede" data-i18n="rsvp.intro">Vi chiediamo gentilmente di compilare il modulo qui sotto per aiutarci a organizzare al meglio il nostro matrimonio.</p>
+      <div class="rsvp-deadline"><span data-i18n="rsvp.deadlineLabel">Vi chiediamo gentilmente di confermare entro il</span> <strong>31 Luglio 2026</strong></div>
+    </div>
+
+    <form class="rsvp-card reveal" id="rsvpForm">
+      <div class="form-group">
+        <label data-i18n="f.name">Nome e cognome *</label>
+        <input type="text" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.email">Email *</label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.phone">Numero di telefono *</label>
+        <input type="tel" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.attending">Sarai presente al matrimonio? *</label>
+        <div class="radio-row">
+          <label class="radio-opt"><input type="radio" name="attending" value="yes" required><span data-i18n="f.att1">Sì, sarò presente</span></label>
+          <label class="radio-opt"><input type="radio" name="attending" value="no"><span data-i18n="f.att2">No, purtroppo non potrò partecipare</span></label>
+          <label class="radio-opt"><input type="radio" name="attending" value="maybe"><span data-i18n="f.att3">Non lo so ancora</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.count">Quante persone sono incluse in questa risposta? *</label>
+        <select name="guestCount" required>
+          <option value="">--</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option data-i18n="f.other">Altro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.names">Nomi degli invitati inclusi in questa risposta *</label>
+        <textarea name="guestNames" required></textarea>
+        <div class="hint" data-i18n="f.namesHint">Indica il nome completo di ogni persona inclusa nella conferma.</div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.arriveDate">Quando arrivi ad Acireale? *</label>
+        <input type="date" name="arriveDate" required>
+        <div class="hint" data-i18n="f.arriveDateHint">Se non lo sai ancora, indica una data approssimativa.</div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.arriveTime">A che ora pensi di arrivare?</label>
+        <input type="time" name="arriveTime">
+        <div class="hint" data-i18n="f.arriveTimeHint">Facoltativo, ma utile per organizzare al meglio il weekend.</div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.departDate">Quando riparti da Acireale? *</label>
+        <input type="date" name="departDate" required>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.departTime">A che ora pensi di ripartire?</label>
+        <input type="time" name="departTime">
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.allergy">Hai allergie, intolleranze o esigenze alimentari? *</label>
+        <div class="radio-row">
+          <label class="radio-opt"><input type="radio" name="allergyFlag" value="no" required><span data-i18n="f.no">No</span></label>
+          <label class="radio-opt"><input type="radio" name="allergyFlag" value="yes"><span data-i18n="f.yes">Sì</span></label>
+        </div>
+        <div class="conditional" id="allergyBox">
+          <textarea name="allergyDetail" data-i18n-placeholder="f.allergyPh"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.diet">Preferenze alimentari</label>
+        <div class="checkbox-row">
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Vegetariano"><span data-i18n="f.d1">Vegetariano</span></label>
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Vegano"><span data-i18n="f.d2">Vegano</span></label>
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Senza glutine"><span data-i18n="f.d3">Senza glutine</span></label>
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Senza lattosio"><span data-i18n="f.d4">Senza lattosio</span></label>
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Altro"><span data-i18n="f.d5">Altro</span></label>
+          <label class="checkbox-opt"><input type="checkbox" name="diet" value="Nessuna preferenza"><span data-i18n="f.d6">Nessuna preferenza</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.speech">Ti piacerebbe fare un discorso durante il matrimonio? *</label>
+        <div class="radio-row">
+          <label class="radio-opt"><input type="radio" name="speech" value="yes" required><span data-i18n="f.yes">Sì</span></label>
+          <label class="radio-opt"><input type="radio" name="speech" value="no"><span data-i18n="f.no">No</span></label>
+          <label class="radio-opt"><input type="radio" name="speech" value="maybe"><span data-i18n="f.maybe">Forse</span></label>
+        </div>
+        <div class="conditional" id="speechBox">
+          <textarea name="speechDetail" data-i18n-placeholder="f.speechPh"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.accom">Hai già prenotato l'alloggio?</label>
+        <div class="radio-row">
+          <label class="radio-opt"><input type="radio" name="accom" value="yes"><span data-i18n="f.yes">Sì</span></label>
+          <label class="radio-opt"><input type="radio" name="accom" value="no"><span data-i18n="f.no">No</span></label>
+          <label class="radio-opt"><input type="radio" name="accom" value="notyet"><span data-i18n="f.notyet">Non ancora</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.info">Ti servono informazioni su hotel, trasporti o Acireale?</label>
+        <div class="radio-row">
+          <label class="radio-opt"><input type="radio" name="infoNeeded" value="yes"><span data-i18n="f.yes">Sì</span></label>
+          <label class="radio-opt"><input type="radio" name="infoNeeded" value="no"><span data-i18n="f.no">No</span></label>
+          <label class="radio-opt"><input type="radio" name="infoNeeded" value="maybe"><span data-i18n="f.maybe">Forse</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.song">Vuoi suggerire una canzone per la festa?</label>
+        <input type="text" name="song">
+      </div>
+      <div class="form-group">
+        <label data-i18n="f.comments">Commenti o messaggi per gli sposi</label>
+        <textarea name="comments"></textarea>
+      </div>
+      <div class="form-group consent">
+        <input type="checkbox" name="consent" required id="consentBox">
+        <label for="consentBox" data-i18n="f.consent">Acconsento al trattamento dei miei dati personali esclusivamente per l'organizzazione del matrimonio di Michele &amp; Marta.</label>
+      </div>
+      <button type="submit" class="btn btn-solid" data-i18n="f.submit">Invia la conferma</button>
+      <div class="form-msg" id="msgYes" data-i18n="f.msgYes">Grazie di cuore! Abbiamo ricevuto la tua conferma e non vediamo l'ora di festeggiare insieme in Sicilia.</div>
+      <div class="form-msg" id="msgNo" data-i18n="f.msgNo">Grazie per avercelo fatto sapere. Ci dispiace non averti con noi, ma ti sentiremo vicino/a in questo giorno speciale.</div>
+      <div class="form-msg" id="msgMaybe" data-i18n="f.msgMaybe">Grazie! Abbiamo ricevuto la tua risposta. Quando avrai una conferma definitiva, ti chiediamo gentilmente di aggiornarci.</div>
+    </form>
+  </div>
+</section>
+
+<!-- PROGRAMMA (timeline + ceremony + reception / location merged in) -->
+<section class="programma" id="programma">
+  <div class="container center reveal">
+    <div class="eyebrow" data-i18n="tl.eyebrow">Il grande giorno</div>
+    <h2 class="section-title" data-i18n="tl.title">Programma della giornata</h2>
+    <div class="timeline-list">
+      <div class="tl-row"><div class="tl-time">15:30</div><div><div class="tl-title" data-i18n="tl.t1">Cerimonia religiosa</div><div class="tl-loc" data-i18n="tl.l1">Basilica dei Santi Pietro e Paolo, Acireale</div></div></div>
+      <div class="tl-row"><div class="tl-time">17:00</div><div><div class="tl-title" data-i18n="tl.t2">Aperitivo &amp; cocktails</div><div class="tl-loc" data-i18n="tl.l2">Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">20:00</div><div><div class="tl-title" data-i18n="tl.t3">Cena</div><div class="tl-loc" data-i18n="tl.l3">Terrazza inferiore, Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">21:30</div><div><div class="tl-title" data-i18n="tl.t4">Taglio torta</div><div class="tl-loc" data-i18n="tl.l4">Area piscina, Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">23:00</div><div><div class="tl-title" data-i18n="tl.t5">Party &amp; dancing</div><div class="tl-loc" data-i18n="tl.l5">Musica e festa fino a tarda sera</div></div></div>
+    </div>
+    <p class="tl-note" data-i18n="tl.note">Gli orari potranno subire piccoli aggiustamenti, ma questa sarà la struttura principale della giornata.</p>
+
+    <div class="venue-split reveal">
+      <div class="venue-copy">
+        <div class="eyebrow" data-i18n="cer.eyebrow">Ore 15:30</div>
+        <h3 style="font-size:1.7rem;" data-i18n="cer.title">La Cerimonia</h3>
+        <p class="lede" style="text-align:left;" data-i18n="cer.text">La cerimonia religiosa si terrà alle 15:30 presso la Basilica dei Santi Pietro e Paolo, nel cuore di Acireale.</p>
+        <ul class="detail-list">
+          <li><b data-i18n="cer.dPlace">Luogo</b> Basilica dei Santi Pietro e Paolo</li>
+          <li><b data-i18n="cer.dCity">Città</b> Acireale, Sicilia</li>
+          <li><b data-i18n="cer.dDress">Dress code</b> <span data-i18n="cer.dressVal">Elegante estivo mediterraneo</span></li>
+          <li><b data-i18n="cer.dArrival">Arrivo</b> <span data-i18n="cer.arrivalNote">Qualche minuto in anticipo, per favore.</span></li>
+        </ul>
+        <a href="https://maps.google.com/?q=Basilica+dei+Santi+Pietro+e+Paolo+Acireale" target="_blank" rel="noopener" class="btn" data-i18n="cer.mapBtn">Apri su Google Maps</a>
+      </div>
+      <img src="../assets/basilica-acireale.jpg" alt="Basilica dei Santi Pietro e Paolo, Acireale — luogo della cerimonia">
+    </div>
+
+    <div class="venue-split reveal">
+      <img src="../assets/etna-panorama.jpg" alt="Panorama dell'Etna e della costa siciliana vicino Acireale" style="order:2;">
+      <div class="venue-copy" style="order:1;">
+        <div class="eyebrow" data-i18n="rec.eyebrow">Dalle 17:00</div>
+        <h3 style="font-size:1.7rem;" data-i18n="rec.title">Il Ricevimento</h3>
+        <p class="lede" style="text-align:left;" data-i18n="rec.text">Dopo la cerimonia, vi aspettiamo a Casa delle Terre Forti per un aperitivo al tramonto, una cena sotto le stelle e una serata di musica e festa.</p>
+        <ul class="detail-list">
+          <li><b data-i18n="rec.d1">Aperitivo</b> 17:00</li>
+          <li><b data-i18n="rec.d2">Cena</b> 20:00</li>
+          <li><b data-i18n="rec.d3">Torta</b> 21:30</li>
+          <li><b data-i18n="rec.d5">Location</b> Casa delle Terre Forti, Acireale</li>
+        </ul>
+        <a href="https://maps.google.com/?q=Casa+delle+Terre+Forti+Acireale" target="_blank" rel="noopener" class="btn" data-i18n="rec.mapBtn">Apri su Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="storia">
+  <div class="container center reveal">
+    <div class="eyebrow" data-i18n="about.eyebrow">Noi due</div>
+    <h2 class="section-title" data-i18n="about.title">La nostra storia</h2>
+    <p class="lede" data-i18n="about.text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — testo provvisorio, la nostra storia arriverà presto.</p>
+    <div class="photo-grid">
+      <figure class="spot" style="margin:0;"><img src="../assets/acireale-duomo.jpg" loading="lazy" alt="Piazza Duomo, Acireale"><figcaption>Piazza Duomo · Acireale</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/santa-maria-la-scala.jpg" loading="lazy" alt="Santa Maria la Scala, borgo marinaro di Acireale"><figcaption>Santa Maria la Scala</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/aci-trezza.jpg" loading="lazy" alt="Faraglioni di Aci Trezza, Riviera dei Ciclopi"><figcaption>Aci Trezza</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/ionian-sea-view.jpg" loading="lazy" alt="Vista sul Mar Ionio"><figcaption>Riviera dei Ciclopi</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/etna-panorama.jpg" loading="lazy" alt="Panorama del Monte Etna"><figcaption>Monte Etna</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/lemon-tree-sicily.jpg" loading="lazy" alt="Agrumi di Sicilia"><figcaption>Agrumi di Sicilia</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- HONEYMOON -->
+<section class="honeymoon" id="nozze">
+  <div class="container center reveal">
+    <div class="eyebrow" data-i18n="hm.eyebrow">Un dono per il nostro futuro</div>
+    <h2 class="section-title" data-i18n="hm.title">Viaggio di nozze</h2>
+    <div class="honeymoon-card">
+      <p class="lede" data-i18n="hm.text">La vostra presenza sarà il regalo più bello. Se desiderate contribuire al nostro viaggio di nozze, potete farlo attraverso le coordinate qui sotto.</p>
+      <button class="btn" id="showIbanBtn" data-i18n="hm.showBtn">Mostra IBAN</button>
+      <div class="iban-box" id="ibanBox">
+        <div><span data-i18n="hm.holder">Intestatario</span> — Michele Spina &amp; Marta Pastor Hernández</div>
+        <div><span data-i18n="hm.iban">IBAN</span> — IT00 X000 0000 0000 0000 0000 000</div>
+        <div><span data-i18n="hm.bic">BIC/SWIFT</span> — XXXXXXXX</div>
+        <div><span data-i18n="hm.reason">Causale</span> — Regalo matrimonio Michele &amp; Marta</div>
+        <button class="btn" id="copyIbanBtn" style="margin-top:16px;" data-i18n="hm.copyBtn">Copia IBAN</button>
+        <div class="copy-note" id="copyNote" data-i18n="hm.copied">IBAN copiato!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="container center reveal">
+    <div class="eyebrow" data-i18n="gal.eyebrow">Immagini &amp; ispirazione</div>
+    <h2 class="section-title" data-i18n="gal.title">Ispirazione</h2>
+    <div class="gallery-grid">
+      <img src="../assets/ionian-sea-view.jpg" loading="lazy" alt="Vista sul Mar Ionio da Acireale">
+      <img src="../assets/etna-panorama.jpg" loading="lazy" alt="Panorama del Monte Etna">
+      <img src="../assets/basilica-acireale.jpg" loading="lazy" alt="Basilica dei Santi Pietro e Paolo, Acireale">
+      <img src="../assets/lemon-tree-sicily.jpg" loading="lazy" alt="Albero di limoni siciliano">
+      <div class="gallery-ph" data-i18n="gal.ph1">Casa delle Terre Forti</div>
+      <div class="gallery-ph" data-i18n="gal.ph4">Cena a lume di candela</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contatti">
+  <div class="container reveal">
+    <div class="eyebrow" data-i18n="contact.eyebrow">Restiamo in contatto</div>
+    <h2 class="section-title" data-i18n="contact.title">Contatti</h2>
+    <p class="lede" data-i18n="contact.text">Per qualsiasi dubbio o informazione, potete contattarci qui:</p>
+    <div class="contact-links">
+      <a href="mailto:martapastorhernandez@gmail.com">martapastorhernandez@gmail.com</a>
+      <a href="mailto:michelespina89@gmail.com">michelespina89@gmail.com</a>
+      <span>Michele +39 320 495 3552</span>
+      <span>Marta +34 664 65 04 63</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">Michele &amp; Marta</div>
+  <p>19 Settembre 2026 — Acireale, Sicilia</p>
+  <a href="#rsvp" class="btn" data-i18n="nav.rsvpBtn" style="color:#eae4d8; border-color:#eae4d8; display:inline-block; margin:16px 0;">Conferma presenza</a>
+  <div>
+    <a href="mailto:martapastorhernandez@gmail.com">martapastorhernandez@gmail.com</a> ·
+    <a href="mailto:michelespina89@gmail.com">michelespina89@gmail.com</a>
+  </div>
+  <p class="priv" data-i18n="footer.priv">I dati inviati tramite il modulo RSVP saranno utilizzati esclusivamente per l'organizzazione del matrimonio.</p>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

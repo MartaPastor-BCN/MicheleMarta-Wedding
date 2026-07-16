@@ -135,5 +135,7 @@
   });
 
   /* ---------------- init ---------------- */
-  applyTranslations('it');
+  const pageLang = (document.documentElement.getAttribute('lang') || 'it').slice(0, 2);
+  currentLang = window.I18N[pageLang] ? pageLang : 'it';
+  applyTranslations(currentLang);
 })();
