@@ -23,25 +23,6 @@
     });
     document.documentElement.lang = lang;
     currentLang = lang;
-    renderFaq(lang);
-  }
-
-  function renderFaq(lang) {
-    const dict = window.I18N[lang];
-    const list = document.getElementById('faqList');
-    if (!list || !dict.faqItems) return;
-    list.innerHTML = '';
-    dict.faqItems.forEach(([q, a]) => {
-      const item = document.createElement('div');
-      item.className = 'faq-item';
-      item.innerHTML = `<div class="faq-q"><span>${q}</span><span class="faq-toggle">+</span></div><div class="faq-a">${a}</div>`;
-      item.querySelector('.faq-q').addEventListener('click', () => {
-        const wasOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-toggle').textContent = '+'; });
-        if (!wasOpen) { item.classList.add('open'); item.querySelector('.faq-toggle').textContent = '−'; }
-      });
-      list.appendChild(item);
-    });
   }
 
   document.querySelectorAll('.lang-switch button').forEach(btn => {

@@ -3,259 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Michele &amp; Marta | Matrimonio in Sicilia | 19 Settembre 2026</title>
+<title>Michele &amp; Marta | 19 Settembre 2026 | Acireale</title>
 <meta name="description" content="Sito ufficiale del matrimonio di Michele e Marta ad Acireale, Sicilia, il 19 settembre 2026. Conferma la tua presenza e scopri tutti i dettagli dell'evento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --terracotta:#c1583a;
-    --coral:#e8734f;
-    --ivory:#fbf4e9;
-    --sand:#f1e2c8;
-    --olive:#7c8a5b;
-    --blue:#2e5d73;
-    --dustyblue:#7fa2bd;
-    --citrus:#e8892b;
-    --peach:#f5dcc0;
-    --gold:#b99457;
-    --ink:#3a3230;
-    --shadow:0 12px 34px rgba(58,50,48,.12);
-    --radius:18px;
+    --ink:#221f1c;
+    --paper:#faf7f2;
+    --paper2:#f2ede4;
+    --line:#d9d0c1;
+    --accent:#a85a34;
+    --muted:#7a716a;
+    --shadow:0 18px 44px rgba(34,31,28,.08);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
     margin:0;
-    background:var(--ivory);
+    background:var(--paper);
     color:var(--ink);
-    font-family:'Cormorant Garamond', serif;
+    font-family:'EB Garamond', serif;
     font-size:19px;
-    line-height:1.6;
+    line-height:1.7;
     -webkit-font-smoothing:antialiased;
+    font-weight:400;
   }
-  h1,h2,h3{font-family:'Playfair Display', serif; font-weight:600; margin:0 0 .4em;}
-  .script{font-family:'Great Vibes', cursive; color:var(--coral); line-height:1;}
-  a{color:var(--blue);}
+  h1,h2,h3{font-family:'EB Garamond', serif; font-weight:400; margin:0 0 .3em; letter-spacing:.01em;}
+  .display{font-style:italic; font-weight:400;}
+  a{color:var(--ink);}
   img{max-width:100%; display:block;}
-  .container{max-width:1140px; margin:0 auto; padding:0 24px;}
-  section{padding:90px 0;}
+  .container{max-width:1080px; margin:0 auto; padding:0 28px;}
+  section{padding:110px 0;}
   .center{text-align:center;}
   .eyebrow{
-    letter-spacing:.18em; text-transform:uppercase; font-size:.78rem;
-    color:var(--terracotta); font-family:'Cormorant Garamond',serif; font-weight:600;
+    letter-spacing:.32em; text-transform:uppercase; font-size:.72rem;
+    color:var(--accent); font-weight:500; margin-bottom:18px;
   }
-  .divider{
-    width:70px; height:2px; margin:18px auto; background:linear-gradient(90deg, transparent, var(--gold), transparent);
-  }
+  .rule{width:44px; height:1px; margin:22px auto; background:var(--ink); opacity:.35;}
+  .rule.left{margin-left:0;}
+  h2.section-title{font-size:2.4rem; font-weight:400;}
+  p.lede{font-size:1.15rem; color:#3a352f;}
+
   .btn{
-    display:inline-block; padding:14px 34px; border-radius:40px; text-decoration:none;
-    font-family:'Cormorant Garamond',serif; letter-spacing:.1em; text-transform:uppercase;
-    font-size:.85rem; font-weight:600; cursor:pointer; border:none; transition:transform .25s ease, box-shadow .25s ease;
+    display:inline-block; padding:0 0 4px; text-decoration:none;
+    font-family:'EB Garamond',serif; letter-spacing:.16em; text-transform:uppercase;
+    font-size:.8rem; font-weight:500; cursor:pointer; border:none; background:none;
+    color:var(--ink); border-bottom:1px solid var(--ink); transition:opacity .25s ease, color .25s ease, border-color .25s ease;
   }
-  .btn:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
-  .btn-primary{background:var(--terracotta); color:#fff;}
-  .btn-secondary{background:transparent; color:var(--blue); border:1.5px solid var(--blue);}
-  .btn-outline{background:transparent; color:var(--terracotta); border:1.5px solid var(--terracotta);}
+  .btn:hover{color:var(--accent); border-color:var(--accent);}
+  .btn-solid{
+    border:1px solid var(--ink); padding:13px 30px; border-radius:2px;
+  }
+  .btn-solid:hover{background:var(--ink); color:var(--paper); border-color:var(--ink);}
 
   /* ---------- NAV ---------- */
   header{
     position:fixed; top:0; left:0; right:0; z-index:1000;
-    background:rgba(251,244,233,.92); backdrop-filter:blur(6px);
-    border-bottom:1px solid rgba(185,148,87,.25);
+    background:rgba(250,247,242,.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
   }
-  .navbar{display:flex; align-items:center; justify-content:space-between; padding:12px 24px; max-width:1200px; margin:0 auto;}
-  .brand{font-family:'Great Vibes',cursive; font-size:1.7rem; color:var(--terracotta);}
-  nav.links{display:flex; gap:22px; align-items:center; flex-wrap:wrap;}
+  .navbar{display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1200px; margin:0 auto;}
+  .brand{font-style:italic; font-size:1.35rem; letter-spacing:.02em;}
+  nav.links{display:flex; gap:30px; align-items:center; flex-wrap:wrap;}
   nav.links a{
-    color:var(--ink); text-decoration:none; font-size:.92rem; letter-spacing:.03em;
-    text-transform:uppercase; font-family:'Cormorant Garamond',serif; font-weight:600;
-    padding:6px 2px; border-bottom:1px solid transparent;
+    color:var(--ink); text-decoration:none; font-size:.78rem; letter-spacing:.14em;
+    text-transform:uppercase; font-weight:500; padding:4px 0; border-bottom:1px solid transparent;
   }
-  nav.links a:hover{border-color:var(--gold); color:var(--terracotta);}
-  .nav-rsvp{background:var(--terracotta); color:#fff !important; padding:9px 20px !important; border-radius:30px;}
-  .lang-switch{display:flex; gap:6px; margin-left:12px;}
+  nav.links a:hover{border-color:var(--accent); color:var(--accent);}
+  .nav-rsvp{border-bottom:1px solid var(--ink) !important;}
+  .lang-switch{display:flex; gap:10px; margin-left:6px;}
   .lang-switch button{
-    background:none; border:1px solid var(--gold); color:var(--ink); border-radius:20px;
-    padding:4px 10px; font-size:.75rem; cursor:pointer; font-family:'Cormorant Garamond',serif;
+    background:none; border:none; color:var(--muted); font-size:.72rem; letter-spacing:.05em;
+    cursor:pointer; font-family:'EB Garamond',serif; padding:2px 0;
   }
-  .lang-switch button.active{background:var(--gold); color:#fff;}
-  .burger{display:none; font-size:1.6rem; background:none; border:none; color:var(--terracotta); cursor:pointer;}
+  .lang-switch button.active{color:var(--ink); border-bottom:1px solid var(--accent);}
+  .burger{display:none; font-size:1.5rem; background:none; border:none; color:var(--ink); cursor:pointer;}
 
   @media(max-width:900px){
     nav.links{
-      display:none; position:absolute; top:64px; left:0; right:0; background:var(--ivory);
-      flex-direction:column; padding:18px; box-shadow:var(--shadow); border-bottom:1px solid rgba(185,148,87,.25);
+      display:none; position:absolute; top:60px; left:0; right:0; background:var(--paper);
+      flex-direction:column; align-items:flex-start; padding:22px 28px; box-shadow:var(--shadow); border-bottom:1px solid var(--line);
     }
     nav.links.open{display:flex;}
     .burger{display:block;}
   }
 
-  /* floating mobile rsvp */
   .floating-rsvp{
     position:fixed; bottom:18px; left:50%; transform:translateX(-50%); z-index:1001;
-    background:var(--terracotta); color:#fff; padding:13px 26px; border-radius:40px;
-    box-shadow:0 8px 24px rgba(193,88,58,.45); font-weight:600; letter-spacing:.08em;
-    text-transform:uppercase; font-size:.82rem; text-decoration:none; display:none;
+    background:var(--ink); color:var(--paper); padding:13px 30px;
+    letter-spacing:.14em; text-transform:uppercase; font-size:.76rem; text-decoration:none; display:none;
   }
   @media(max-width:760px){ .floating-rsvp{display:block;} }
 
   /* ---------- HERO ---------- */
   .hero{
-    min-height:100vh; display:flex; align-items:center; justify-content:center;
-    position:relative; padding:150px 20px 80px;
-    background:linear-gradient(rgba(251,244,233,.35),rgba(251,244,233,.55)), url('assets/acireale-view.jpeg') center/cover no-repeat;
+    min-height:100vh; display:flex; align-items:flex-end; justify-content:center;
+    position:relative; padding:0 20px 90px;
+    background:linear-gradient(180deg, rgba(20,17,14,.18) 0%, rgba(20,17,14,.15) 45%, rgba(20,17,14,.65) 100%), url('assets/ionian-sea-view.jpg') center 38%/cover no-repeat;
   }
-  .hero-frame{
-    max-width:640px; width:100%; background:rgba(255,251,244,.88); border:1.5px solid rgba(185,148,87,.5);
-    border-radius:6px; padding:60px 34px; text-align:center; box-shadow:var(--shadow);
-  }
-  .hero h1.names{font-size:4rem; margin-bottom:6px;}
-  .hero .date{color:var(--blue); font-size:1.5rem; letter-spacing:.06em; margin-bottom:2px; font-family:'Playfair Display',serif;}
-  .hero .place{color:var(--terracotta); font-size:1.15rem; letter-spacing:.08em; text-transform:uppercase; margin-bottom:22px;}
-  .hero .subtitle{font-size:1.08rem; max-width:480px; margin:0 auto 28px; color:var(--ink); font-style:italic;}
-  .hero .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:26px;}
-  .countdown{font-family:'Playfair Display',serif; color:var(--blue); font-size:1.05rem; letter-spacing:.03em;}
-  .countdown b{color:var(--terracotta); font-size:1.4rem;}
+  .hero-inner{max-width:640px; width:100%; text-align:center; color:#fdfbf7;}
+  .hero .eyebrow{color:#f1e3d3; opacity:.9;}
+  .hero h1.names{font-size:4.4rem; font-style:italic; font-weight:400; margin-bottom:8px; letter-spacing:.01em;}
+  .hero .date{font-size:1.05rem; letter-spacing:.28em; text-transform:uppercase; margin-bottom:6px;}
+  .hero .place{font-size:1rem; letter-spacing:.2em; text-transform:uppercase; opacity:.85; margin-bottom:26px;}
+  .hero .subtitle{font-size:1.08rem; font-style:italic; max-width:460px; margin:0 auto 30px; opacity:.92;}
+  .hero .cta-row{display:flex; gap:26px; justify-content:center; flex-wrap:wrap; margin-bottom:34px;}
+  .hero .btn{color:#fdfbf7; border-color:#fdfbf7;}
+  .hero .btn:hover{color:#f1e3d3; border-color:#f1e3d3;}
+  .hero .btn-solid{border-color:#fdfbf7;}
+  .hero .btn-solid:hover{background:#fdfbf7; color:var(--ink);}
+  .countdown{font-size:.85rem; letter-spacing:.14em; text-transform:uppercase; opacity:.85;}
+  .countdown b{font-size:1.2rem; font-style:italic; letter-spacing:0; text-transform:none;}
 
-  /* ---------- INTRO ---------- */
-  .intro{background:var(--peach);}
-  .intro .container{max-width:760px;}
-  .intro p{font-size:1.2rem;}
-
-  /* ---------- fade reveal ---------- */
-  .reveal{opacity:0; transform:translateY(24px); transition:opacity .8s ease, transform .8s ease;}
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0; transform:translateY(20px); transition:opacity .9s ease, transform .9s ease;}
   .reveal.visible{opacity:1; transform:none;}
 
+  /* ---------- INTRO ---------- */
+  .intro .container{max-width:660px;}
+
   /* ---------- RSVP ---------- */
-  .rsvp-section{background:var(--sand);}
-  .rsvp-card{
-    background:var(--ivory); border-radius:var(--radius); box-shadow:var(--shadow);
-    padding:44px; max-width:760px; margin:0 auto; border:1px solid rgba(185,148,87,.3);
-  }
+  .rsvp-section{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .rsvp-card{max-width:680px; margin:0 auto;}
   .rsvp-deadline{
-    background:rgba(232,115,79,.12); border:1px solid rgba(232,115,79,.35); color:var(--terracotta);
-    padding:10px 18px; border-radius:30px; display:inline-block; font-size:.95rem; margin-bottom:24px; font-weight:600;
+    font-size:.85rem; letter-spacing:.06em; color:var(--accent); margin-bottom:36px; font-style:italic;
   }
-  .form-group{margin-bottom:22px;}
-  .form-group label{display:block; font-weight:600; margin-bottom:6px; color:var(--blue);}
-  .form-group .hint{font-size:.88rem; color:#7a716c; font-style:italic; margin-top:4px;}
+  .form-group{margin-bottom:26px;}
+  .form-group label{display:block; font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; margin-bottom:8px; color:var(--muted);}
+  .form-group .hint{font-size:.86rem; color:var(--muted); font-style:italic; margin-top:6px;}
   input[type=text], input[type=email], input[type=tel], input[type=date], input[type=time], input[type=number], select, textarea{
-    width:100%; padding:13px 14px; border:1.5px solid rgba(185,148,87,.4); border-radius:10px;
-    font-family:'Cormorant Garamond',serif; font-size:1.05rem; background:#fffdf8; color:var(--ink);
+    width:100%; padding:10px 2px; border:none; border-bottom:1px solid var(--line); border-radius:0;
+    font-family:'EB Garamond',serif; font-size:1.05rem; background:transparent; color:var(--ink);
   }
-  textarea{min-height:90px; resize:vertical;}
-  input:focus, select:focus, textarea:focus{outline:2px solid var(--dustyblue); border-color:var(--dustyblue);}
-  .radio-row, .checkbox-row{display:flex; flex-wrap:wrap; gap:14px;}
+  textarea{min-height:80px; resize:vertical;}
+  input:focus, select:focus, textarea:focus{outline:none; border-color:var(--accent);}
+  .radio-row, .checkbox-row{display:flex; flex-wrap:wrap; gap:22px;}
   .radio-opt, .checkbox-opt{
-    display:flex; align-items:center; gap:8px; background:#fff; border:1.5px solid rgba(185,148,87,.35);
-    padding:9px 16px; border-radius:30px; cursor:pointer; font-size:.98rem;
+    display:flex; align-items:center; gap:8px; cursor:pointer; font-size:.98rem;
   }
-  .radio-opt input, .checkbox-opt input{margin:0; width:auto;}
-  .conditional{display:none; margin-top:12px;}
+  .radio-opt input, .checkbox-opt input{margin:0; width:auto; accent-color:var(--accent);}
+  .conditional{display:none; margin-top:14px;}
   .conditional.show{display:block;}
-  .consent{display:flex; gap:10px; align-items:flex-start; font-size:.92rem;}
-  .consent input{width:auto; margin-top:5px;}
-  .form-msg{
-    margin-top:20px; padding:16px 20px; border-radius:12px; font-weight:600; display:none;
-  }
+  .consent{display:flex; gap:12px; align-items:flex-start; font-size:.9rem; color:var(--muted);}
+  .consent input{width:auto; margin-top:5px; accent-color:var(--accent);}
+  .form-msg{margin-top:26px; padding:18px 0; border-top:1px solid var(--line); font-style:italic; display:none;}
   .form-msg.show{display:block;}
-  .form-msg.yes{background:rgba(124,138,91,.15); color:var(--olive); border:1px solid rgba(124,138,91,.35);}
-  .form-msg.no{background:rgba(46,93,115,.12); color:var(--blue); border:1px solid rgba(46,93,115,.3);}
-  .form-msg.maybe{background:rgba(232,137,43,.15); color:var(--citrus); border:1px solid rgba(232,137,43,.35);}
 
-  /* ---------- TIMELINE ---------- */
-  .timeline-section{background:var(--ivory);}
-  .timeline{display:grid; grid-template-columns:repeat(5,1fr); gap:18px; margin-top:50px;}
-  @media(max-width:900px){ .timeline{grid-template-columns:1fr; gap:0;} }
-  .tl-item{
-    background:#fff; border-radius:var(--radius); padding:26px 18px; text-align:center; box-shadow:var(--shadow);
-    border-top:4px solid var(--coral); position:relative;
+  /* ---------- PROGRAMMA (incl. location) ---------- */
+  .programma{background:var(--paper);}
+  .timeline-list{max-width:640px; margin:56px auto 0;}
+  .tl-row{
+    display:grid; grid-template-columns:110px 1fr; gap:24px; padding:24px 0; border-top:1px solid var(--line);
+    align-items:baseline;
   }
-  @media(max-width:900px){
-    .tl-item{text-align:left; border-top:none; border-left:4px solid var(--coral); margin-bottom:18px; padding:20px 22px;}
-  }
-  .tl-icon{font-size:2rem; margin-bottom:8px;}
-  .tl-time{color:var(--blue); font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:600;}
-  .tl-title{color:var(--terracotta); font-weight:600; margin:6px 0 4px;}
-  .tl-loc{font-size:.92rem; color:#6b625c;}
-  .tl-note{text-align:center; margin-top:30px; font-style:italic; color:#7a716c; font-size:.95rem;}
+  .tl-row:last-child{border-bottom:1px solid var(--line);}
+  .tl-time{font-size:1.15rem; font-style:italic; color:var(--accent);}
+  .tl-title{font-size:1.15rem; margin-bottom:2px;}
+  .tl-loc{font-size:.92rem; color:var(--muted);}
+  .tl-note{text-align:center; margin-top:26px; font-style:italic; color:var(--muted); font-size:.92rem;}
 
-  /* ---------- DETAIL SPLIT ---------- */
-  .split{display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;}
-  @media(max-width:800px){ .split{grid-template-columns:1fr;} }
-  .split img{border-radius:var(--radius); box-shadow:var(--shadow);}
-  .detail-list{list-style:none; padding:0; margin:20px 0;}
-  .detail-list li{padding:8px 0; border-bottom:1px dashed rgba(185,148,87,.4);}
-  .detail-list b{color:var(--blue);}
-
-  .ceremony{background:var(--peach);}
-  .reception{background:var(--ivory);}
-  .experience{background:var(--sand);}
+  .venue-split{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-top:100px;}
+  @media(max-width:800px){ .venue-split{grid-template-columns:1fr; gap:34px;} }
+  .venue-split img{border-radius:1px;}
+  .venue-copy .eyebrow{margin-bottom:14px;}
+  .detail-list{list-style:none; padding:0; margin:22px 0 26px;}
+  .detail-list li{padding:9px 0; border-top:1px solid var(--line); font-size:.98rem;}
+  .detail-list li:last-child{border-bottom:1px solid var(--line);}
+  .detail-list b{font-weight:500; color:var(--muted); font-size:.82rem; letter-spacing:.04em; text-transform:uppercase; display:inline-block; min-width:120px;}
 
   /* ---------- ABOUT ---------- */
-  .about{background:var(--ivory);}
-  .photo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:36px;}
+  .about{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .photo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:56px;}
   @media(max-width:700px){ .photo-grid{grid-template-columns:repeat(2,1fr);} }
   .photo-card{
-    aspect-ratio:3/4; background:var(--peach); border-radius:var(--radius); display:flex; align-items:center;
-    justify-content:center; text-align:center; padding:16px; color:var(--terracotta); font-family:'Playfair Display',serif;
-    font-style:italic; box-shadow:var(--shadow); border:1px solid rgba(185,148,87,.3);
+    aspect-ratio:3/4; background:#efe8db; display:flex; align-items:center;
+    justify-content:center; text-align:center; padding:16px; color:var(--muted); font-style:italic;
+    font-size:.92rem; border:1px solid var(--line);
   }
-
-  /* ---------- TRAVEL ---------- */
-  .travel{background:var(--peach);}
-  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:40px;}
-  @media(max-width:800px){ .cards{grid-template-columns:1fr;} }
-  .info-card{background:#fff; border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); border-top:3px solid var(--olive);}
-  .info-card .ic-icon{font-size:1.8rem; margin-bottom:10px;}
-  .info-card h3{color:var(--blue); font-size:1.25rem;}
+  .photo-card.real{background:#efe8db none; padding:0;}
+  .photo-card.real img{width:100%; height:100%; object-fit:cover;}
 
   /* ---------- HONEYMOON ---------- */
-  .honeymoon{background:var(--ivory);}
+  .honeymoon{background:var(--paper);}
   .honeymoon-card{
-    max-width:560px; margin:40px auto 0; background:var(--sand); border:1.5px solid rgba(193,88,58,.35);
-    border-radius:var(--radius); padding:36px; text-align:center; box-shadow:var(--shadow);
+    max-width:520px; margin:56px auto 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    padding:44px 0; text-align:center;
   }
-  .iban-box{background:#fff; border-radius:10px; padding:16px; margin:16px 0; display:none; font-family:monospace; font-size:1.05rem;}
+  .iban-box{padding:20px 0 0; margin:16px 0 0; display:none; font-size:1rem;}
   .iban-box.show{display:block;}
-  .copy-note{font-size:.85rem; color:var(--olive); margin-top:6px; display:none;}
+  .iban-box div{padding:6px 0;}
+  .copy-note{font-size:.82rem; color:var(--accent); margin-top:10px; display:none; font-style:italic;}
   .copy-note.show{display:block;}
 
   /* ---------- GALLERY ---------- */
-  .gallery{background:var(--sand);}
-  .gallery-grid{columns:3 260px; column-gap:16px; margin-top:36px;}
-  .gallery-grid img{margin-bottom:16px; border-radius:14px; box-shadow:var(--shadow); transition:transform .35s ease;}
-  .gallery-grid img:hover{transform:scale(1.02);}
+  .gallery{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .gallery-grid{columns:3 260px; column-gap:6px; margin-top:56px;}
+  .gallery-grid img{margin-bottom:6px;}
   .gallery-ph{
-    margin-bottom:16px; border-radius:14px; background:var(--peach); aspect-ratio:4/5; display:flex;
-    align-items:center; justify-content:center; text-align:center; padding:16px; color:var(--terracotta);
-    font-family:'Playfair Display',serif; font-style:italic; box-shadow:var(--shadow); break-inside:avoid;
+    margin-bottom:6px; background:#efe8db; aspect-ratio:4/5; display:flex;
+    align-items:center; justify-content:center; text-align:center; padding:16px; color:var(--muted);
+    font-style:italic; font-size:.9rem; break-inside:avoid; border:1px solid var(--line);
   }
   @media(max-width:700px){ .gallery-grid{columns:2 180px;} }
 
-  /* ---------- FAQ ---------- */
-  .faq{background:var(--ivory);}
-  .faq-item{border-bottom:1px solid rgba(185,148,87,.35); padding:16px 0;}
-  .faq-q{
-    display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-weight:600;
-    color:var(--blue); font-family:'Playfair Display',serif; font-size:1.1rem;
-  }
-  .faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease; font-size:1.02rem; color:var(--ink);}
-  .faq-item.open .faq-a{max-height:300px; margin-top:10px;}
-  .faq-toggle{color:var(--terracotta); font-size:1.3rem;}
-
   /* ---------- CONTACTS ---------- */
-  .contacts{background:var(--peach); text-align:center;}
-  .contact-links{display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin-top:24px; font-size:1.1rem;}
+  .contacts{background:var(--paper); text-align:center;}
+  .contact-links{display:flex; gap:34px; justify-content:center; flex-wrap:wrap; margin-top:28px; font-size:1.02rem;}
+  .contact-links a{border-bottom:1px solid transparent;}
+  .contact-links a:hover{border-color:var(--ink);}
 
-  footer{background:#3d2e26; color:#f2e6d8; padding:50px 20px 90px; text-align:center;}
-  footer .brand{color:#f2c9a0; font-size:2rem;}
-  footer a{color:#f2c9a0;}
-  footer .priv{font-size:.85rem; opacity:.75; margin-top:18px; max-width:520px; margin-left:auto; margin-right:auto;}
-  @media(max-width:760px){ footer{padding-bottom:110px;} }
+  footer{background:var(--ink); color:#eae4d8; padding:56px 20px 100px; text-align:center;}
+  footer .brand{font-style:italic; font-size:1.7rem; color:#f2e6d3;}
+  footer a{color:#eae4d8;}
+  footer .priv{font-size:.82rem; opacity:.6; margin-top:22px; max-width:480px; margin-left:auto; margin-right:auto;}
+  @media(max-width:760px){ footer{padding-bottom:120px;} }
 
-  ::selection{background:var(--coral); color:#fff;}
+  ::selection{background:var(--accent); color:#fff;}
 </style>
 </head>
 <body>
@@ -268,11 +233,8 @@
       <a href="#home" data-i18n="nav.home">Home</a>
       <a href="#rsvp" data-i18n="nav.rsvp">Conferma presenza</a>
       <a href="#programma" data-i18n="nav.programma">Programma</a>
-      <a href="#location" data-i18n="nav.location">Location</a>
       <a href="#storia" data-i18n="nav.storia">La nostra storia</a>
-      <a href="#sicilia" data-i18n="nav.sicilia">Sicilia</a>
       <a href="#nozze" data-i18n="nav.nozze">Viaggio di nozze</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
       <a href="#contatti" data-i18n="nav.contatti">Contatti</a>
       <a href="#rsvp" class="nav-rsvp" data-i18n="nav.rsvpBtn">Conferma presenza</a>
       <div class="lang-switch">
@@ -289,15 +251,15 @@
 
 <!-- HOME / HERO -->
 <section class="hero" id="home">
-  <div class="hero-frame reveal">
+  <div class="hero-inner reveal">
     <div class="eyebrow" data-i18n="hero.eyebrow">19 Settembre 2026 — Acireale, Sicilia</div>
-    <h1 class="names script">Michele &amp; Marta</h1>
+    <h1 class="names display">Michele &amp; Marta</h1>
     <div class="date">19 · 09 · 2026</div>
     <div class="place" data-i18n="hero.place">Acireale, Sicilia</div>
     <p class="subtitle" data-i18n="hero.subtitle">Con immensa gioia vi invitiamo a celebrare con noi il nostro matrimonio nel cuore della Sicilia.</p>
     <div class="cta-row">
-      <a href="#rsvp" class="btn btn-primary" data-i18n="hero.cta1">Conferma la tua presenza</a>
-      <a href="#programma" class="btn btn-secondary" data-i18n="hero.cta2">Scopri il programma</a>
+      <a href="#rsvp" class="btn btn-solid" data-i18n="hero.cta1">Conferma la tua presenza</a>
+      <a href="#programma" class="btn" data-i18n="hero.cta2">Scopri il programma</a>
     </div>
     <div class="countdown"><span data-i18n="hero.countdownPre">Mancano</span> <b id="countdownDays">--</b> <span data-i18n="hero.countdownPost">giorni</span></div>
   </div>
@@ -307,9 +269,9 @@
 <section class="intro">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="intro.eyebrow">Benvenuti</div>
-    <p data-i18n="intro.p1">Con immensa gioia vi invitiamo a condividere la celebrazione del nostro matrimonio ad Acireale, in Sicilia, sabato 19 settembre 2026.</p>
-    <p data-i18n="intro.p2">Sarà una giornata speciale tra il mare, l'Etna, la bellezza siciliana, la musica, il buon cibo e le persone che amiamo di più.</p>
-    <p data-i18n="intro.p3">Abbiamo creato questo sito per raccogliere tutte le informazioni utili e per permettervi di confermare la vostra presenza.</p>
+    <p class="lede" data-i18n="intro.p1">Con immensa gioia vi invitiamo a condividere la celebrazione del nostro matrimonio ad Acireale, in Sicilia, sabato 19 settembre 2026.</p>
+    <p class="lede" data-i18n="intro.p2">Sarà una giornata speciale tra il mare, l'Etna, la bellezza siciliana, la musica, il buon cibo e le persone che amiamo di più.</p>
+    <p class="lede" data-i18n="intro.p3">Abbiamo creato questo sito per raccogliere tutte le informazioni utili e per permettervi di confermare la vostra presenza.</p>
   </div>
 </section>
 
@@ -318,9 +280,8 @@
   <div class="container">
     <div class="center reveal">
       <div class="eyebrow" data-i18n="rsvp.eyebrow">RSVP</div>
-      <h2 data-i18n="rsvp.title">Conferma la tua presenza</h2>
-      <div class="divider"></div>
-      <p data-i18n="rsvp.intro">Vi chiediamo gentilmente di compilare il modulo qui sotto per aiutarci a organizzare al meglio il nostro matrimonio.</p>
+      <h2 class="section-title" data-i18n="rsvp.title">Conferma la tua presenza</h2>
+      <p class="lede" data-i18n="rsvp.intro">Vi chiediamo gentilmente di compilare il modulo qui sotto per aiutarci a organizzare al meglio il nostro matrimonio.</p>
       <div class="rsvp-deadline"><span data-i18n="rsvp.deadlineLabel">Vi chiediamo gentilmente di confermare entro il</span> <strong>31 Luglio 2026</strong></div>
     </div>
 
@@ -383,7 +344,7 @@
           <label class="radio-opt"><input type="radio" name="allergyFlag" value="yes"><span data-i18n="f.yes">Sì</span></label>
         </div>
         <div class="conditional" id="allergyBox">
-          <textarea name="allergyDetail" placeholder="" data-i18n-placeholder="f.allergyPh"></textarea>
+          <textarea name="allergyDetail" data-i18n-placeholder="f.allergyPh"></textarea>
         </div>
       </div>
       <div class="form-group">
@@ -436,84 +397,59 @@
         <input type="checkbox" name="consent" required id="consentBox">
         <label for="consentBox" data-i18n="f.consent">Acconsento al trattamento dei miei dati personali esclusivamente per l'organizzazione del matrimonio di Michele &amp; Marta.</label>
       </div>
-      <button type="submit" class="btn btn-primary" data-i18n="f.submit">Invia la conferma</button>
-      <div class="form-msg yes" id="msgYes" data-i18n="f.msgYes">Grazie di cuore! Abbiamo ricevuto la tua conferma e non vediamo l'ora di festeggiare insieme in Sicilia.</div>
-      <div class="form-msg no" id="msgNo" data-i18n="f.msgNo">Grazie per avercelo fatto sapere. Ci dispiace non averti con noi, ma ti sentiremo vicino/a in questo giorno speciale.</div>
-      <div class="form-msg maybe" id="msgMaybe" data-i18n="f.msgMaybe">Grazie! Abbiamo ricevuto la tua risposta. Quando avrai una conferma definitiva, ti chiediamo gentilmente di aggiornarci.</div>
+      <button type="submit" class="btn btn-solid" data-i18n="f.submit">Invia la conferma</button>
+      <div class="form-msg" id="msgYes" data-i18n="f.msgYes">Grazie di cuore! Abbiamo ricevuto la tua conferma e non vediamo l'ora di festeggiare insieme in Sicilia.</div>
+      <div class="form-msg" id="msgNo" data-i18n="f.msgNo">Grazie per avercelo fatto sapere. Ci dispiace non averti con noi, ma ti sentiremo vicino/a in questo giorno speciale.</div>
+      <div class="form-msg" id="msgMaybe" data-i18n="f.msgMaybe">Grazie! Abbiamo ricevuto la tua risposta. Quando avrai una conferma definitiva, ti chiediamo gentilmente di aggiornarci.</div>
     </form>
   </div>
 </section>
 
-<!-- PROGRAMMA -->
-<section class="timeline-section" id="programma">
+<!-- PROGRAMMA (timeline + ceremony + reception / location merged in) -->
+<section class="programma" id="programma">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="tl.eyebrow">Il grande giorno</div>
-    <h2 data-i18n="tl.title">Programma della giornata</h2>
-    <div class="divider"></div>
-    <div class="timeline">
-      <div class="tl-item"><div class="tl-icon">⛪</div><div class="tl-time">15:30</div><div class="tl-title" data-i18n="tl.t1">Cerimonia religiosa</div><div class="tl-loc" data-i18n="tl.l1">Basilica dei Santi Pietro e Paolo, Acireale</div></div>
-      <div class="tl-item"><div class="tl-icon">🍹</div><div class="tl-time">17:00</div><div class="tl-title" data-i18n="tl.t2">Aperitivo &amp; cocktails</div><div class="tl-loc" data-i18n="tl.l2">Casa delle Terre Forti</div></div>
-      <div class="tl-item"><div class="tl-icon">🍽️</div><div class="tl-time">20:00</div><div class="tl-title" data-i18n="tl.t3">Cena</div><div class="tl-loc" data-i18n="tl.l3">Terrazza inferiore, Casa delle Terre Forti</div></div>
-      <div class="tl-item"><div class="tl-icon">🍰</div><div class="tl-time">22:30</div><div class="tl-title" data-i18n="tl.t4">Taglio torta</div><div class="tl-loc" data-i18n="tl.l4">Area piscina, Casa delle Terre Forti</div></div>
-      <div class="tl-item"><div class="tl-icon">🎶</div><div class="tl-time">23:00</div><div class="tl-title" data-i18n="tl.t5">Party &amp; dancing</div><div class="tl-loc" data-i18n="tl.l5">Musica e festa fino a tarda sera</div></div>
+    <h2 class="section-title" data-i18n="tl.title">Programma della giornata</h2>
+    <div class="timeline-list">
+      <div class="tl-row"><div class="tl-time">15:30</div><div><div class="tl-title" data-i18n="tl.t1">Cerimonia religiosa</div><div class="tl-loc" data-i18n="tl.l1">Basilica dei Santi Pietro e Paolo, Acireale</div></div></div>
+      <div class="tl-row"><div class="tl-time">17:00</div><div><div class="tl-title" data-i18n="tl.t2">Aperitivo &amp; cocktails</div><div class="tl-loc" data-i18n="tl.l2">Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">20:00</div><div><div class="tl-title" data-i18n="tl.t3">Cena</div><div class="tl-loc" data-i18n="tl.l3">Terrazza inferiore, Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">22:30</div><div><div class="tl-title" data-i18n="tl.t4">Taglio torta</div><div class="tl-loc" data-i18n="tl.l4">Area piscina, Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">23:00</div><div><div class="tl-title" data-i18n="tl.t5">Party &amp; dancing</div><div class="tl-loc" data-i18n="tl.l5">Musica e festa fino a tarda sera</div></div></div>
     </div>
     <p class="tl-note" data-i18n="tl.note">Gli orari potranno subire piccoli aggiustamenti, ma questa sarà la struttura principale della giornata.</p>
-  </div>
-</section>
 
-<!-- CEREMONY -->
-<section class="ceremony" id="location">
-  <div class="container reveal">
-    <div class="split">
-      <div>
+    <div class="venue-split reveal">
+      <div class="venue-copy">
         <div class="eyebrow" data-i18n="cer.eyebrow">Ore 15:30</div>
-        <h2 data-i18n="cer.title">La Cerimonia</h2>
-        <div class="divider" style="margin-left:0;"></div>
-        <p data-i18n="cer.text">La cerimonia religiosa si terrà alle 15:30 presso la Basilica dei Santi Pietro e Paolo, nel cuore di Acireale.</p>
+        <h3 style="font-size:1.7rem;" data-i18n="cer.title">La Cerimonia</h3>
+        <p class="lede" style="text-align:left;" data-i18n="cer.text">La cerimonia religiosa si terrà alle 15:30 presso la Basilica dei Santi Pietro e Paolo, nel cuore di Acireale.</p>
         <ul class="detail-list">
-          <li><b data-i18n="cer.dTime">Orario:</b> 15:30</li>
-          <li><b data-i18n="cer.dPlace">Luogo:</b> Basilica dei Santi Pietro e Paolo</li>
-          <li><b data-i18n="cer.dCity">Città:</b> Acireale, Sicilia</li>
-          <li><b data-i18n="cer.dDress">Dress code:</b> <span data-i18n="cer.dressVal">Elegante estivo mediterraneo — toni caldi, tessuti leggeri, comodi su pavé e ciottoli</span></li>
-          <li><b data-i18n="cer.dArrival">Arrivo:</b> <span data-i18n="cer.arrivalNote">Vi consigliamo di arrivare con qualche minuto di anticipo.</span></li>
+          <li><b data-i18n="cer.dPlace">Luogo</b> Basilica dei Santi Pietro e Paolo</li>
+          <li><b data-i18n="cer.dCity">Città</b> Acireale, Sicilia</li>
+          <li><b data-i18n="cer.dDress">Dress code</b> <span data-i18n="cer.dressVal">Elegante estivo mediterraneo</span></li>
+          <li><b data-i18n="cer.dArrival">Arrivo</b> <span data-i18n="cer.arrivalNote">Qualche minuto in anticipo, per favore.</span></li>
         </ul>
-        <a href="https://maps.google.com/?q=Basilica+dei+Santi+Pietro+e+Paolo+Acireale" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="cer.mapBtn">Apri la Basilica su Google Maps</a>
+        <a href="https://maps.google.com/?q=Basilica+dei+Santi+Pietro+e+Paolo+Acireale" target="_blank" rel="noopener" class="btn" data-i18n="cer.mapBtn">Apri su Google Maps</a>
       </div>
-      <img src="assets/hero-frame.jpeg" alt="Michele e Marta wedding invitation with Sicilian watercolour details">
+      <img src="assets/basilica-acireale.jpg" alt="Basilica dei Santi Pietro e Paolo, Acireale — luogo della cerimonia">
     </div>
-  </div>
-</section>
 
-<!-- RECEPTION -->
-<section class="reception">
-  <div class="container reveal">
-    <div class="split">
-      <img src="assets/acireale-view.jpeg" alt="Casa delle Terre Forti wedding reception in Acireale, view of Ionian Sea">
-      <div>
+    <div class="venue-split reveal">
+      <img src="assets/etna-panorama.jpg" alt="Panorama dell'Etna e della costa siciliana vicino Acireale" style="order:2;">
+      <div class="venue-copy" style="order:1;">
         <div class="eyebrow" data-i18n="rec.eyebrow">Dalle 17:00</div>
-        <h2 data-i18n="rec.title">Il Ricevimento</h2>
-        <div class="divider" style="margin-left:0;"></div>
-        <p data-i18n="rec.text">Dopo la cerimonia, vi aspettiamo a Casa delle Terre Forti per un aperitivo al tramonto, una cena sotto le stelle e una serata di musica e festa.</p>
+        <h3 style="font-size:1.7rem;" data-i18n="rec.title">Il Ricevimento</h3>
+        <p class="lede" style="text-align:left;" data-i18n="rec.text">Dopo la cerimonia, vi aspettiamo a Casa delle Terre Forti per un aperitivo al tramonto, una cena sotto le stelle e una serata di musica e festa.</p>
         <ul class="detail-list">
-          <li><b data-i18n="rec.d1">Aperitivo dalle:</b> 17:00</li>
-          <li><b data-i18n="rec.d2">Cena:</b> 20:00</li>
-          <li><b data-i18n="rec.d3">Taglio torta:</b> 22:30</li>
-          <li><b data-i18n="rec.d4">Party:</b> 23:00</li>
-          <li><b data-i18n="rec.d5">Location:</b> Casa delle Terre Forti, Acireale</li>
+          <li><b data-i18n="rec.d1">Aperitivo</b> 17:00</li>
+          <li><b data-i18n="rec.d2">Cena</b> 20:00</li>
+          <li><b data-i18n="rec.d3">Torta</b> 22:30</li>
+          <li><b data-i18n="rec.d5">Location</b> Casa delle Terre Forti, Acireale</li>
         </ul>
-        <a href="https://maps.google.com/?q=Casa+delle+Terre+Forti+Acireale" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="rec.mapBtn">Apri Casa delle Terre Forti su Google Maps</a>
+        <a href="https://maps.google.com/?q=Casa+delle+Terre+Forti+Acireale" target="_blank" rel="noopener" class="btn" data-i18n="rec.mapBtn">Apri su Google Maps</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="experience">
-  <div class="container center reveal" style="max-width:820px;">
-    <div class="eyebrow" data-i18n="exp.eyebrow">L'atmosfera</div>
-    <h2 data-i18n="exp.title">Un pomeriggio e una sera in Sicilia</h2>
-    <div class="divider"></div>
-    <p data-i18n="exp.text">Desideriamo che ogni momento della giornata scorra in modo naturale: dalla cerimonia nel cuore di Acireale, all'aperitivo con vista sul mare, fino alla cena a lume di candela e alla festa sotto le stelle. Sarà una celebrazione mediterranea, elegante ma spontanea, con musica continua, sapori siciliani, fiori, candele, agrumi e il calore delle persone che amiamo.</p>
   </div>
 </section>
 
@@ -521,32 +457,15 @@
 <section class="about" id="storia">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="about.eyebrow">Noi due</div>
-    <h2 data-i18n="about.title">La nostra storia</h2>
-    <div class="divider"></div>
-    <p data-i18n="about.text">La nostra storia ci ha portati fino alla Sicilia, dove desideriamo celebrare l'amore con le persone che più amiamo. Questo sito raccoglie tutte le informazioni utili per vivere insieme a noi un weekend speciale ad Acireale.</p>
+    <h2 class="section-title" data-i18n="about.title">La nostra storia</h2>
+    <p class="lede" data-i18n="about.text">La nostra storia ci ha portati fino alla Sicilia, dove desideriamo celebrare l'amore con le persone che più amiamo.</p>
     <div class="photo-grid">
       <div class="photo-card" data-i18n="about.ph1">Il nostro primo viaggio insieme</div>
       <div class="photo-card" data-i18n="about.ph2">Momenti speciali</div>
       <div class="photo-card" data-i18n="about.ph3">La proposta</div>
+      <div class="photo-card real"><img src="assets/lemon-tree-sicily.jpg" alt="Alberi di limoni in Sicilia"></div>
       <div class="photo-card" data-i18n="about.ph4">Verso la Sicilia</div>
       <div class="photo-card" data-i18n="about.ph5">Michele &amp; Marta</div>
-      <div class="photo-card"><img src="assets/rings.jpeg" alt="Wedding rings watercolour illustration" style="border-radius:10px;"></div>
-    </div>
-  </div>
-</section>
-
-<!-- TRAVEL -->
-<section class="travel" id="sicilia">
-  <div class="container center reveal">
-    <div class="eyebrow" data-i18n="travel.eyebrow">Guida pratica</div>
-    <h2 data-i18n="travel.title">Viaggio e soggiorno</h2>
-    <div class="divider"></div>
-    <div class="cards">
-      <div class="info-card"><div class="ic-icon">✈️</div><h3 data-i18n="travel.h1">Come arrivare</h3><p data-i18n="travel.t1">L'aeroporto più comodo per raggiungere Acireale è l'Aeroporto di Catania-Fontanarossa. Da lì, Acireale è raggiungibile in auto, taxi o transfer.</p></div>
-      <div class="info-card"><div class="ic-icon">🧳</div><h3 data-i18n="travel.h2">Quando arrivare</h3><p data-i18n="travel.t2">Consigliamo di arrivare venerdì 18 settembre o sabato mattina 19 settembre, così da vivere la giornata con tranquillità.</p></div>
-      <div class="info-card"><div class="ic-icon">🚗</div><h3 data-i18n="travel.h3">Quando ripartire</h3><p data-i18n="travel.t3">Per godervi il weekend con calma, potete valutare la partenza domenica 20 settembre o lunedì 21 settembre.</p></div>
-      <div class="info-card"><div class="ic-icon">🏨</div><h3 data-i18n="travel.h4">Dove dormire</h3><p data-i18n="travel.t4">Condivideremo presto alcuni consigli su hotel, B&amp;B e zone comode dove soggiornare ad Acireale e dintorni.</p></div>
-      <div class="info-card"><div class="ic-icon">🚕</div><h3 data-i18n="travel.h5">Trasporti</h3><p data-i18n="travel.t5">Aggiungeremo informazioni su transfer, taxi, parcheggio e spostamenti non appena disponibili.</p></div>
     </div>
   </div>
 </section>
@@ -555,17 +474,16 @@
 <section class="honeymoon" id="nozze">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="hm.eyebrow">Un dono per il nostro futuro</div>
-    <h2 data-i18n="hm.title">Viaggio di nozze</h2>
-    <div class="divider"></div>
+    <h2 class="section-title" data-i18n="hm.title">Viaggio di nozze</h2>
     <div class="honeymoon-card">
-      <p data-i18n="hm.text">La vostra presenza sarà il regalo più bello. Se desiderate contribuire al nostro viaggio di nozze, potete farlo attraverso le coordinate qui sotto. Grazie di cuore per accompagnarci anche in questa nuova avventura.</p>
-      <button class="btn btn-outline" id="showIbanBtn" data-i18n="hm.showBtn">Mostra IBAN</button>
+      <p class="lede" data-i18n="hm.text">La vostra presenza sarà il regalo più bello. Se desiderate contribuire al nostro viaggio di nozze, potete farlo attraverso le coordinate qui sotto.</p>
+      <button class="btn" id="showIbanBtn" data-i18n="hm.showBtn">Mostra IBAN</button>
       <div class="iban-box" id="ibanBox">
-        <div><span data-i18n="hm.holder">Intestatario:</span> Michele Spina &amp; Marta Pastor Hernández</div>
-        <div><span data-i18n="hm.iban">IBAN:</span> IT00 X000 0000 0000 0000 0000 000</div>
-        <div><span data-i18n="hm.bic">BIC/SWIFT:</span> XXXXXXXX</div>
-        <div><span data-i18n="hm.reason">Causale:</span> Regalo matrimonio Michele &amp; Marta</div>
-        <button class="btn btn-primary" id="copyIbanBtn" style="margin-top:12px; padding:9px 20px;" data-i18n="hm.copyBtn">Copia IBAN</button>
+        <div><span data-i18n="hm.holder">Intestatario</span> — Michele Spina &amp; Marta Pastor Hernández</div>
+        <div><span data-i18n="hm.iban">IBAN</span> — IT00 X000 0000 0000 0000 0000 000</div>
+        <div><span data-i18n="hm.bic">BIC/SWIFT</span> — XXXXXXXX</div>
+        <div><span data-i18n="hm.reason">Causale</span> — Regalo matrimonio Michele &amp; Marta</div>
+        <button class="btn" id="copyIbanBtn" style="margin-top:16px;" data-i18n="hm.copyBtn">Copia IBAN</button>
         <div class="copy-note" id="copyNote" data-i18n="hm.copied">IBAN copiato!</div>
       </div>
     </div>
@@ -576,32 +494,15 @@
 <section class="gallery">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="gal.eyebrow">Immagini &amp; ispirazione</div>
-    <h2 data-i18n="gal.title">Ispirazione</h2>
-    <div class="divider"></div>
+    <h2 class="section-title" data-i18n="gal.title">Ispirazione</h2>
     <div class="gallery-grid">
-      <img src="assets/hero-frame.jpeg" loading="lazy" alt="Michele e Marta wedding invitation with Sicilian watercolour details">
-      <img src="assets/acireale-view.jpeg" loading="lazy" alt="Mediterranean sea view in Sicily, Acireale and the Ionian coast">
-      <img src="assets/invitation-card.jpeg" loading="lazy" alt="Terracotta and citrus Sicilian wedding design invitation">
-      <img src="assets/palette.jpeg" loading="lazy" alt="Mediterranean floral colour palette, orange and blue tones">
-      <img src="assets/rings.jpeg" loading="lazy" alt="Wedding rings watercolour illustration">
+      <img src="assets/ionian-sea-view.jpg" loading="lazy" alt="Vista sul Mar Ionio da Acireale">
+      <img src="assets/etna-panorama.jpg" loading="lazy" alt="Panorama del Monte Etna">
+      <img src="assets/basilica-acireale.jpg" loading="lazy" alt="Basilica dei Santi Pietro e Paolo, Acireale">
+      <img src="assets/lemon-tree-sicily.jpg" loading="lazy" alt="Albero di limoni siciliano">
       <div class="gallery-ph" data-i18n="gal.ph1">Casa delle Terre Forti</div>
-      <div class="gallery-ph" data-i18n="gal.ph2">Monte Etna</div>
-      <div class="gallery-ph" data-i18n="gal.ph3">Alberi di agrumi</div>
       <div class="gallery-ph" data-i18n="gal.ph4">Cena a lume di candela</div>
-      <div class="gallery-ph" data-i18n="gal.ph5">Terrazze mediterranee</div>
     </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="container reveal" style="max-width:820px;">
-    <div class="center">
-      <div class="eyebrow" data-i18n="faq.eyebrow">Domande frequenti</div>
-      <h2 data-i18n="faq.title">FAQ / Info utili</h2>
-      <div class="divider"></div>
-    </div>
-    <div id="faqList"></div>
   </div>
 </section>
 
@@ -609,22 +510,21 @@
 <section class="contacts" id="contatti">
   <div class="container reveal">
     <div class="eyebrow" data-i18n="contact.eyebrow">Restiamo in contatto</div>
-    <h2 data-i18n="contact.title">Contatti</h2>
-    <div class="divider"></div>
-    <p data-i18n="contact.text">Per qualsiasi dubbio o informazione, potete contattarci qui:</p>
+    <h2 class="section-title" data-i18n="contact.title">Contatti</h2>
+    <p class="lede" data-i18n="contact.text">Per qualsiasi dubbio o informazione, potete contattarci qui:</p>
     <div class="contact-links">
       <a href="mailto:martapastorhernandez@gmail.com">martapastorhernandez@gmail.com</a>
       <a href="mailto:michelespina89@gmail.com">michelespina89@gmail.com</a>
-      <span>Michele: +39 320 495 3552</span>
-      <span>Marta: +34 664 65 04 63</span>
+      <span>Michele +39 320 495 3552</span>
+      <span>Marta +34 664 65 04 63</span>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="brand script">Michele &amp; Marta</div>
+  <div class="brand">Michele &amp; Marta</div>
   <p>19 Settembre 2026 — Acireale, Sicilia</p>
-  <a href="#rsvp" class="btn btn-primary" data-i18n="nav.rsvpBtn" style="margin:14px 0;">Conferma presenza</a>
+  <a href="#rsvp" class="btn" data-i18n="nav.rsvpBtn" style="color:#eae4d8; border-color:#eae4d8; display:inline-block; margin:16px 0;">Conferma presenza</a>
   <div>
     <a href="mailto:martapastorhernandez@gmail.com">martapastorhernandez@gmail.com</a> ·
     <a href="mailto:michelespina89@gmail.com">michelespina89@gmail.com</a>
