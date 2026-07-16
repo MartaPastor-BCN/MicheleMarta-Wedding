@@ -6,12 +6,13 @@ const langs = ['it', 'en', 'es', 'ca'];
 const labels = { it: 'IT', en: 'EN', es: 'ES', ca: 'CA' };
 
 const tpl = fs.readFileSync('template.html', 'utf8');
+const v = Date.now();
 
 for (const lang of langs) {
   let h = tpl;
   h = h.replace('<html lang="it">', `<html lang="${lang}">`);
-  h = h.replace(/src="app\.js"/g, 'src="../app.js"');
-  h = h.replace(/src="i18n\.js"/g, 'src="../i18n.js"');
+  h = h.replace(/src="app\.js"/g, `src="../app.js?v=${v}"`);
+  h = h.replace(/src="i18n\.js"/g, `src="../i18n.js?v=${v}"`);
   h = h.replace(/assets\//g, '../assets/');
 
   const sw = `<div class="lang-switch">\n` +
