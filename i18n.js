@@ -229,3 +229,4 @@ ca: {
   footer: {priv:"Les dades enviades a través del formulari es faran servir exclusivament per a l'organització del casament."}
 }
 };
+window.I18N = I18N;
