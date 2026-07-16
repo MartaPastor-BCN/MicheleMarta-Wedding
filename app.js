@@ -91,6 +91,30 @@
     });
   }
 
+  /* ---------------- attending = No hides the rest of the form ---------------- */
+  const attendingFields = document.getElementById('attendingFields');
+  if (attendingFields) {
+    // Remember which fields were originally required
+    const reqFields = Array.prototype.slice.call(
+      attendingFields.querySelectorAll('[required]')
+    );
+    reqFields.forEach(el => el.setAttribute('data-was-required', '1'));
+
+    const applyAttending = () => {
+      const sel = document.querySelector('input[name="attending"]:checked');
+      const notComing = sel && sel.value === 'no';
+      attendingFields.style.display = notComing ? 'none' : '';
+      reqFields.forEach(el => {
+        if (notComing) el.removeAttribute('required');
+        else if (el.getAttribute('data-was-required')) el.setAttribute('required', '');
+      });
+    };
+    document.querySelectorAll('input[name="attending"]').forEach(r => {
+      r.addEventListener('change', applyAttending);
+    });
+    applyAttending();
+  }
+
   /* ---------------- honeymoon IBAN reveal / copy ---------------- */
   const showIbanBtn = document.getElementById('showIbanBtn');
   const ibanBox = document.getElementById('ibanBox');
