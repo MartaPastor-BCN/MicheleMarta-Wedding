@@ -66,7 +66,7 @@
   }
   .navbar{display:flex; align-items:center; justify-content:space-between; padding:16px 28px; max-width:1200px; margin:0 auto;}
   .brand{font-style:italic; font-size:1rem; letter-spacing:.14em;}
-  nav.links{display:flex; gap:30px; align-items:center; flex-wrap:wrap;}
+  nav.links{display:flex; gap:24px; align-items:center; flex-wrap:wrap;}
   nav.links a{
     color:var(--ink); text-decoration:none; font-size:.78rem; letter-spacing:.14em;
     text-transform:uppercase; font-weight:500; padding:4px 0; border-bottom:1px solid transparent;
@@ -184,6 +184,14 @@
   }
   .photo-card.real{background:#efe8db none; padding:0;}
   .photo-card.real img{width:100%; height:100%; object-fit:cover;}
+  .spot{position:relative; overflow:hidden; aspect-ratio:3/4; border:1px solid var(--line);}
+  .spot img{width:100%; height:100%; object-fit:cover; transition:transform .7s ease;}
+  .spot:hover img{transform:scale(1.05);}
+  .spot figcaption{
+    position:absolute; left:0; right:0; bottom:0; padding:22px 14px 12px;
+    font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:#fdfbf7;
+    background:linear-gradient(transparent, rgba(20,17,14,.65));
+  }
 
   /* ---------- HONEYMOON ---------- */
   .honeymoon{background:var(--paper);}
@@ -227,7 +235,7 @@
 
 <header>
   <div class="navbar">
-    <div class="brand">M &amp; M</div>
+    <div class="brand">M&amp;M</div>
     <button class="burger" id="burgerBtn">&#9776;</button>
     <nav class="links" id="navLinks">
       <a href="#home" data-i18n="nav.home">Home</a>
@@ -236,7 +244,6 @@
       <a href="#storia" data-i18n="nav.storia">La nostra storia</a>
       <a href="#nozze" data-i18n="nav.nozze">Viaggio di nozze</a>
       <a href="#contatti" data-i18n="nav.contatti">Contatti</a>
-      <a href="#rsvp" class="nav-rsvp" data-i18n="nav.rsvpBtn">Conferma presenza</a>
       <div class="lang-switch">
         <button data-lang="it" class="active">IT</button>
         <button data-lang="en">EN</button>
@@ -412,7 +419,7 @@
       <div class="tl-row"><div class="tl-time">15:30</div><div><div class="tl-title" data-i18n="tl.t1">Cerimonia religiosa</div><div class="tl-loc" data-i18n="tl.l1">Basilica dei Santi Pietro e Paolo, Acireale</div></div></div>
       <div class="tl-row"><div class="tl-time">17:00</div><div><div class="tl-title" data-i18n="tl.t2">Aperitivo &amp; cocktails</div><div class="tl-loc" data-i18n="tl.l2">Casa delle Terre Forti</div></div></div>
       <div class="tl-row"><div class="tl-time">20:00</div><div><div class="tl-title" data-i18n="tl.t3">Cena</div><div class="tl-loc" data-i18n="tl.l3">Terrazza inferiore, Casa delle Terre Forti</div></div></div>
-      <div class="tl-row"><div class="tl-time">22:30</div><div><div class="tl-title" data-i18n="tl.t4">Taglio torta</div><div class="tl-loc" data-i18n="tl.l4">Area piscina, Casa delle Terre Forti</div></div></div>
+      <div class="tl-row"><div class="tl-time">21:30</div><div><div class="tl-title" data-i18n="tl.t4">Taglio torta</div><div class="tl-loc" data-i18n="tl.l4">Area piscina, Casa delle Terre Forti</div></div></div>
       <div class="tl-row"><div class="tl-time">23:00</div><div><div class="tl-title" data-i18n="tl.t5">Party &amp; dancing</div><div class="tl-loc" data-i18n="tl.l5">Musica e festa fino a tarda sera</div></div></div>
     </div>
     <p class="tl-note" data-i18n="tl.note">Gli orari potranno subire piccoli aggiustamenti, ma questa sarà la struttura principale della giornata.</p>
@@ -442,7 +449,7 @@
         <ul class="detail-list">
           <li><b data-i18n="rec.d1">Aperitivo</b> 17:00</li>
           <li><b data-i18n="rec.d2">Cena</b> 20:00</li>
-          <li><b data-i18n="rec.d3">Torta</b> 22:30</li>
+          <li><b data-i18n="rec.d3">Torta</b> 21:30</li>
           <li><b data-i18n="rec.d5">Location</b> Casa delle Terre Forti, Acireale</li>
         </ul>
         <a href="https://maps.google.com/?q=Casa+delle+Terre+Forti+Acireale" target="_blank" rel="noopener" class="btn" data-i18n="rec.mapBtn">Apri su Google Maps</a>
@@ -456,14 +463,14 @@
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="about.eyebrow">Noi due</div>
     <h2 class="section-title" data-i18n="about.title">La nostra storia</h2>
-    <p class="lede" data-i18n="about.text">La nostra storia ci ha portati fino alla Sicilia, dove desideriamo celebrare l'amore con le persone che più amiamo.</p>
+    <p class="lede" data-i18n="about.text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — testo provvisorio, la nostra storia arriverà presto.</p>
     <div class="photo-grid">
-      <div class="photo-card" data-i18n="about.ph1">Il nostro primo viaggio insieme</div>
-      <div class="photo-card" data-i18n="about.ph2">Momenti speciali</div>
-      <div class="photo-card" data-i18n="about.ph3">La proposta</div>
-      <div class="photo-card real"><img src="assets/lemon-tree-sicily.jpg" alt="Alberi di limoni in Sicilia"></div>
-      <div class="photo-card" data-i18n="about.ph4">Verso la Sicilia</div>
-      <div class="photo-card" data-i18n="about.ph5">Michele &amp; Marta</div>
+      <figure class="spot" style="margin:0;"><img src="assets/acireale-duomo.jpg" loading="lazy" alt="Piazza Duomo, Acireale"><figcaption>Piazza Duomo · Acireale</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="assets/santa-maria-la-scala.jpg" loading="lazy" alt="Santa Maria la Scala, borgo marinaro di Acireale"><figcaption>Santa Maria la Scala</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="assets/aci-trezza.jpg" loading="lazy" alt="Faraglioni di Aci Trezza, Riviera dei Ciclopi"><figcaption>Aci Trezza</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="assets/ionian-sea-view.jpg" loading="lazy" alt="Vista sul Mar Ionio"><figcaption>Riviera dei Ciclopi</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="assets/etna-panorama.jpg" loading="lazy" alt="Panorama del Monte Etna"><figcaption>Monte Etna</figcaption></figure>
+      <figure class="spot" style="margin:0;"><img src="assets/lemon-tree-sicily.jpg" loading="lazy" alt="Agrumi di Sicilia"><figcaption>Agrumi di Sicilia</figcaption></figure>
     </div>
   </div>
 </section>
