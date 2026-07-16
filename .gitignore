@@ -1,0 +1,3 @@
+# Never commit RSVP data or local temp artifacts
+*.xlsx
+_*.py
