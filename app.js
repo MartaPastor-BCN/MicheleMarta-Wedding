@@ -75,6 +75,22 @@
     r.addEventListener('change', () => { if (r.checked) document.getElementById('speechBox').classList.remove('show'); });
   });
 
+  /* ---------------- local guest (from Acireale) toggles arrival date ---------------- */
+  const localGuest = document.getElementById('localGuest');
+  const arriveDate = document.getElementById('arriveDate');
+  if (localGuest && arriveDate) {
+    localGuest.addEventListener('change', () => {
+      if (localGuest.checked) {
+        arriveDate.value = '';
+        arriveDate.required = false;
+        arriveDate.disabled = true;
+      } else {
+        arriveDate.required = true;
+        arriveDate.disabled = false;
+      }
+    });
+  }
+
   /* ---------------- honeymoon IBAN reveal / copy ---------------- */
   const showIbanBtn = document.getElementById('showIbanBtn');
   const ibanBox = document.getElementById('ibanBox');
