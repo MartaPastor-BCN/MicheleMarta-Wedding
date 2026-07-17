@@ -13,14 +13,14 @@ var FIELDS = [
   "submittedAt", "language", "fullName", "email", "phone", "attending",
   "guestCount", "guestNames", "arriveDate", "localGuest", "allergyFlag",
   "allergyDetail", "diet", "speech", "speechDetail", "accom", "infoNeeded",
-  "song", "comments", "consent"
+  "carRental", "song", "comments", "consent"
 ];
 
 var HEADERS = [
   "Timestamp", "Lingua", "Nome e cognome", "Email", "Telefono", "Presenza",
   "N. persone", "Nomi invitati", "Data arrivo", "Di Acireale?", "Allergie?",
   "Dettaglio allergie", "Preferenze alimentari", "Discorso", "Dettaglio discorso",
-  "Alloggio >1 notte", "Info Acireale/Sicilia", "Canzone", "Commenti", "Consenso privacy"
+  "Alloggio >1 notte", "Info Acireale/Sicilia", "Auto a noleggio", "Canzone", "Commenti", "Consenso privacy"
 ];
 
 function doPost(e) {
@@ -64,6 +64,7 @@ function doPost(e) {
         "Discorso: " + (data.speech || "") + " " + (data.speechDetail || "") + "\n" +
         "Alloggio >1 notte: " + (data.accom || "") + "\n" +
         "Info Acireale/Sicilia: " + (data.infoNeeded || "") + "\n" +
+        "Auto a noleggio: " + (data.carRental || "") + "\n" +
         "Canzone: " + (data.song || "") + "\n" +
         "Commenti: " + (data.comments || "") + "\n" +
         "Lingua: " + (data.language || "") + "\n" +
