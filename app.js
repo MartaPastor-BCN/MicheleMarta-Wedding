@@ -124,7 +124,7 @@
   });
   const copyIbanBtn = document.getElementById('copyIbanBtn');
   copyIbanBtn && copyIbanBtn.addEventListener('click', () => {
-    const ibanText = 'IT00 X000 0000 0000 0000 0000 000';
+    const ibanText = 'ES44 2100 0803 9302 0193 9827';
     navigator.clipboard && navigator.clipboard.writeText(ibanText.replace(/\s/g, ''));
     const note = document.getElementById('copyNote');
     note.classList.add('show');
@@ -179,7 +179,14 @@
     form.reset();
     document.getElementById('allergyBox').classList.remove('show');
     document.getElementById('speechBox').classList.remove('show');
+    if (attendingFields) attendingFields.style.display = '';
     shownMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // For attending guests, gently surface the honeymoon section afterwards
+    if (attending === 'yes') {
+      const nozze = document.getElementById('nozze');
+      if (nozze) setTimeout(() => nozze.scrollIntoView({ behavior: 'smooth', block: 'start' }), 2600);
+    }
   });
 
   /* ---------------- init ---------------- */

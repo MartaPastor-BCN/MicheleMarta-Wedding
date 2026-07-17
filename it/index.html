@@ -124,7 +124,12 @@
   .reveal.visible{opacity:1; transform:none;}
 
   /* ---------- INTRO ---------- */
-  .intro .container{max-width:660px;}
+  .intro{position:relative; overflow:hidden;}
+  .intro .container{max-width:660px; position:relative; z-index:2;}
+  .floral-corner{position:absolute; z-index:1; pointer-events:none; opacity:.5; width:min(30vw,300px);}
+  .floral-corner.tl{top:0; left:0;}
+  .floral-corner.br{bottom:0; right:0;}
+  @media(max-width:760px){ .floral-corner{opacity:.38; width:42vw;} }
 
   /* ---------- RSVP ---------- */
   .rsvp-section{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
@@ -177,7 +182,7 @@
 
   /* ---------- ABOUT ---------- */
   .about{background:var(--paper2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .photo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin-top:56px;}
+  .photo-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:56px;}
   @media(max-width:700px){ .photo-grid{grid-template-columns:repeat(2,1fr);} }
   .photo-card{
     aspect-ratio:3/4; background:#efe8db; display:flex; align-items:center;
@@ -276,6 +281,8 @@
 
 <!-- INTRO -->
 <section class="intro">
+  <img class="floral-corner tl" src="../assets/corner-tl.png" alt="" aria-hidden="true">
+  <img class="floral-corner br" src="../assets/corner-br.png" alt="" aria-hidden="true">
   <div class="container center reveal">
     <div class="eyebrow" data-i18n="intro.eyebrow">Benvenuti</div>
     <p class="lede" data-i18n="intro.p1">Con gioia vi invitiamo al nostro matrimonio ad Acireale: un giorno tra il mare, l'Etna e le persone che amiamo. Qui trovate tutte le informazioni e potete confermare la vostra presenza.</p>
@@ -459,12 +466,10 @@
     <h2 class="section-title" data-i18n="about.title">La nostra storia</h2>
     <p class="lede" data-i18n="about.text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — testo provvisorio, la nostra storia arriverà presto.</p>
     <div class="photo-grid">
-      <div class="photo-card" data-i18n="about.ph1">Il nostro primo viaggio insieme</div>
-      <div class="photo-card" data-i18n="about.ph2">Momenti speciali</div>
-      <div class="photo-card" data-i18n="about.ph3">La proposta</div>
-      <div class="photo-card" data-i18n="about.ph4">Verso la Sicilia</div>
-      <div class="photo-card" data-i18n="about.ph5">Michele &amp; Marta</div>
-      <div class="photo-card" data-i18n="about.ph6">Presto insieme</div>
+      <figure class="spot" style="margin:0;"><img src="../assets/story-swim.jpg" loading="lazy" alt="Michele e Marta prima di una nuotata in mare"></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/story-bike.jpg" loading="lazy" alt="Michele e Marta con le bici da triathlon"></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/story-ruins.jpg" loading="lazy" alt="Michele e Marta tra le rovine in Sicilia"></figure>
+      <figure class="spot" style="margin:0;"><img src="../assets/story-church.jpg" loading="lazy" alt="Michele e Marta eleganti in Sicilia"></figure>
     </div>
   </div>
 </section>
@@ -479,9 +484,9 @@
       <button class="btn" id="showIbanBtn" data-i18n="hm.showBtn">Mostra IBAN</button>
       <div class="iban-box" id="ibanBox">
         <div><span data-i18n="hm.holder">Intestatario</span> — Michele Spina &amp; Marta Pastor Hernández</div>
-        <div><span data-i18n="hm.iban">IBAN</span> — IT00 X000 0000 0000 0000 0000 000</div>
-        <div><span data-i18n="hm.bic">BIC/SWIFT</span> — XXXXXXXX</div>
-        <div><span data-i18n="hm.reason">Causale</span> — Regalo matrimonio Michele &amp; Marta</div>
+        <div><span data-i18n="hm.iban">IBAN</span> — ES44 2100 0803 9302 0193 9827</div>
+        <div><span data-i18n="hm.bic">BIC/SWIFT</span> — CAIXESBBXXX</div>
+        <div><span data-i18n="hm.reason">Causale</span> — <span data-i18n="hm.reasonVal">Regalo matrimonio Michele &amp; Marta</span></div>
         <button class="btn" id="copyIbanBtn" style="margin-top:16px;" data-i18n="hm.copyBtn">Copia IBAN</button>
         <div class="copy-note" id="copyNote" data-i18n="hm.copied">IBAN copiato!</div>
       </div>
@@ -533,7 +538,7 @@
   <p class="priv" data-i18n="footer.priv">I dati inviati tramite il modulo RSVP saranno utilizzati esclusivamente per l'organizzazione del matrimonio.</p>
 </footer>
 
-<script src="../i18n.js?v=1784262926919"></script>
-<script src="../app.js?v=1784262926919"></script>
+<script src="../i18n.js?v=1784264450640"></script>
+<script src="../app.js?v=1784264450640"></script>
 </body>
 </html>
