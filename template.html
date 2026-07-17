@@ -59,6 +59,14 @@
     border:1px solid var(--ink); padding:13px 30px; border-radius:2px;
   }
   .btn-solid:hover{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+  .btn-submit{
+    display:block; width:100%; margin-top:14px; padding:18px 30px;
+    font-size:1rem; letter-spacing:.18em; background:var(--ink); color:var(--paper);
+  }
+  .btn-submit:hover{background:var(--accent); border-color:var(--accent); color:#fff;}
+  @media(max-width:760px){
+    .btn-submit{padding:20px 24px; font-size:1.05rem;}
+  }
 
   /* ---------- NAV ---------- */
   header{
@@ -411,7 +419,7 @@
         <input type="checkbox" name="consent" required id="consentBox">
         <label for="consentBox" data-i18n="f.consent">Acconsento al trattamento dei miei dati personali esclusivamente per l'organizzazione del matrimonio di Michele &amp; Marta.</label>
       </div>
-      <button type="submit" class="btn btn-solid" data-i18n="f.submit">Invia la conferma</button>
+      <button type="submit" class="btn btn-solid btn-submit" data-i18n="f.submit">Invia la conferma</button>
       <div class="form-msg" id="msgYes" data-i18n="f.msgYes">Grazie di cuore! Abbiamo ricevuto la tua conferma e non vediamo l'ora di festeggiare insieme in Sicilia.</div>
       <div class="form-msg" id="msgNo" data-i18n="f.msgNo">Grazie per avercelo fatto sapere. Ci dispiace non averti con noi, ma ti sentiremo vicino/a in questo giorno speciale.</div>
       <div class="form-msg" id="msgMaybe" data-i18n="f.msgMaybe">Grazie! Abbiamo ricevuto la tua risposta. Quando avrai una conferma definitiva, ti chiediamo gentilmente di aggiornarci.</div>
