@@ -181,12 +181,6 @@
     document.getElementById('speechBox').classList.remove('show');
     if (attendingFields) attendingFields.style.display = '';
     shownMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-    // For attending guests, gently surface the honeymoon section afterwards
-    if (attending === 'yes') {
-      const nozze = document.getElementById('nozze');
-      if (nozze) setTimeout(() => nozze.scrollIntoView({ behavior: 'smooth', block: 'start' }), 2600);
-    }
   });
 
   /* ---------------- init ---------------- */
