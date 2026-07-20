@@ -151,18 +151,31 @@
       if (Array.isArray(payload[k])) payload[k] = payload[k].join(', ');
     });
 
-    // Send to Power Automate flow (writes a row into RSVP_Responses table in
-    // Michele_Marta_Wedding_RSVP_2026.xlsx on OneDrive, and emails both couple addresses).
+    // Send to the Google Apps Script endpoint (writes a row into the Google Sheet
+    // and emails both of us). keepalive + sendBeacon fallback ensure the request
+    // still completes even on slow mobile networks or if the page unloads quickly.
     if (RSVP_ENDPOINT) {
+      const bodyStr = JSON.stringify(payload);
+      let sent = false;
       try {
         await fetch(RSVP_ENDPOINT, {
           method: 'POST',
           mode: 'no-cors',
           headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-          body: JSON.stringify(payload)
+          body: bodyStr,
+          keepalive: true
         });
+        sent = true;
       } catch (err) {
-        console.error('RSVP submission failed', err);
+        console.error('RSVP fetch failed, attempting beacon fallback', err);
+      }
+      if (!sent && navigator.sendBeacon) {
+        try {
+          const blob = new Blob([bodyStr], { type: 'text/plain;charset=UTF-8' });
+          navigator.sendBeacon(RSVP_ENDPOINT, blob);
+        } catch (e2) {
+          console.error('RSVP beacon fallback failed', e2);
+        }
       }
     } else {
       console.warn('RSVP_ENDPOINT not configured yet — form data captured locally only:', payload);

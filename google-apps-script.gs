@@ -24,6 +24,14 @@ var HEADERS = [
 ];
 
 function doPost(e) {
+  var lock = LockService.getScriptLock();
+  try {
+    // Wait up to 30s for other submissions to finish, so concurrent
+    // RSVPs never overwrite each other.
+    lock.waitLock(30000);
+  } catch (lockErr) {
+    // Could not obtain lock; still attempt to write below.
+  }
   try {
     var data = {};
     if (e && e.postData && e.postData.contents) {
@@ -81,6 +89,8 @@ function doPost(e) {
     return ContentService
       .createTextOutput(JSON.stringify({ result: "error", message: String(err) }))
       .setMimeType(ContentService.MimeType.JSON);
+  } finally {
+    try { lock.releaseLock(); } catch (relErr) {}
   }
 }
 
