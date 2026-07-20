@@ -1,7 +1,7 @@
 // Michele & Marta wedding website — interactivity, i18n switching, RSVP handling
 (function () {
   const WEDDING_DATE = new Date('2026-09-19T15:30:00+02:00');
-  const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxR2zmao95l131PquSQFo2tAth-BoXTF5a4h3-DuGvO4VdanVhVBUt-fx2PUjfv5s5TfA/exec';
+  const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxET694y1cqsc4hXFy_GmkSoYbHjRK9JcOCoYPqWeQaWZ-iunHTj5JCh20EiLqsJ0Ht3Q/exec';
 
   /* ---------------- i18n ---------------- */
   let currentLang = 'it';
